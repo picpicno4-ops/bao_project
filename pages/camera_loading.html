@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/all.scss" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <!-- 標題 -->
+      <div class="bg-camera camera-overlay position-relative">
+        <!-- 標題 -->
+        <section>
+          <div class="ps-6 pe-3 d-flex justify-content-between">
+            <!-- 標題 -->
+            <div class="py-2">
+              <h2 class="mb-0">AI相機</h2>
+            </div>
+          </div>
+        </section>
+        <!-- 載入 -->
+        <section>
+          <div
+            class="text-center d-flex flex-column justify-content-center vw-100 vh-100"
+          >
+            <div class="mb-3 fs-5 fw-bold text-white" id="status-text">
+              分析中...
+            </div>
+            <div class="w-h-62 mx-auto text-white" id="circle-container"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

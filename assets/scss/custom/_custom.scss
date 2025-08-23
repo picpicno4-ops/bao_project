@@ -1,0 +1,219 @@
+// spacer
+
+.margin-top--50 {
+  margin-top: -3.125rem;
+}
+
+// max-w
+
+.max-w-100 {
+  max-width: 6.25rem;
+  width: 6.25rem;
+}
+
+.max-w-142 {
+  max-width: 8.875rem;
+}
+
+.max-w-128 {
+  max-width: 8rem;
+}
+
+// max-h
+
+.max-h-26 {
+  max-height: 1.625rem;
+  height: 1.625rem;
+}
+
+.max-h-54 {
+  max-height: 3.375rem;
+  height: 3.375rem;
+}
+
+// w-h
+
+.w-h-32 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.w-h-62 {
+  width: 62px;
+  height: 62px;
+}
+
+.w-300-h-362 {
+  width: 18.75rem;
+  height: 22.625rem;
+}
+
+// vw
+
+.vw-100 {
+  width: 100vw;
+}
+
+// vh
+
+.vh-75 {
+  height: 75vh;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+// border-radius
+
+.border-radius-20 {
+  border-radius: $border-radius-20;
+}
+
+.border-radius-12 {
+  border-radius: $border-radius-12;
+}
+
+// hover_focus
+
+.nav-active {
+  color: $neutral-300;
+}
+
+.nav-active:hover {
+  color: $primary-500;
+}
+
+.nav-active:focus {
+  color: $primary-500;
+}
+
+.camera-btn-active {
+  color: $neutral-500;
+  background: rgba($neutral-800, 0.5);
+}
+
+.camera-btn-active:hover {
+  color: $neutral-800;
+  background: white;
+}
+
+.camera-btn-active:focus {
+  color: $neutral-800;
+  background: white;
+}
+
+.breakfast {
+  background: $tertiary-grey-yellow;
+}
+
+.breakfast:hover {
+  background: $secondary-yellow-500;
+}
+
+.lunch {
+  background: $tertiary-grey-orange;
+}
+
+.lunch:hover {
+  background: $secondary-orange-500;
+}
+
+.dinner {
+  background: $tertiary-grey-blue;
+}
+
+.dinner:hover {
+  background: $secondary-blue-500;
+}
+
+.dessert {
+  background: $tertiary-grey-pink;
+}
+
+.dessert:hover {
+  background: $secondary-pink-500;
+}
+
+// background
+
+.bg-camera {
+  background-image: url("/assets/images/photo.png");
+  background-repeat: no-repeat; /* 不重複 */
+  background-position: calc(50% - 40px) calc(50% + 30px); /* 水平+垂直置中 */
+  background-size: 200%;
+}
+
+// overlay
+
+.camera-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top, right, bottom, left 全部 0 */
+  background: rgba(0, 0, 0, 0.3); /* 黑色 50% */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* Safari 支援 */
+  z-index: 1; /* 遮罩層 */
+}
+
+.camera-overlay > section {
+  position: relative;
+  z-index: 2; /* 內容要蓋在遮罩之上 */
+  color: white;
+}
+
+.overlay-box {
+  width: 300px;
+  height: 166px;
+  position: relative;
+
+  // background: rgba(255, 255, 255, 0.2);
+
+  /* border-top 使用線性漸層 */
+  border-top: 3px solid transparent;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.1) 80%
+    ),
+    /* 背景 */
+      linear-gradient(
+        to right,
+        transparent 5%,
+        rgba(255, 255, 255, 1) 50%,
+        transparent 95%
+      ); /* top border */
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 100%, 100% 3px; /* 背景全域, border-top 高度 3px */
+  background-position: top left, top left;
+}
+
+// loading
+
+.progress-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#0d6efd 0% 0%, #e9ecef 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.progress-ring-inner {
+  width: 90px;
+  height: 90px;
+  background-color: white; /* 中間空心 */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// form_placeholder
+
+.form-control::placeholder {
+  font-size: $h6-font-size;
+  color: $primary-950;
+}
