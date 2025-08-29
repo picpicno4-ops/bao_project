@@ -1,3 +1,12 @@
+// cell-phone
+
+.cell-phone {
+  width: 375px;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+
 // spacer
 
 .margin-top--50 {
@@ -17,6 +26,16 @@
 
 .max-w-128 {
   max-width: 8rem;
+}
+
+.max-w-175 {
+  max-width: 175px;
+}
+
+// min-w
+
+.min-w-165 {
+  min-width: 165px;
 }
 
 // max-h
@@ -135,6 +154,19 @@
   background: $secondary-pink-500;
 }
 
+.mind-card {
+  color: $primary-800;
+  background: $white;
+}
+
+.mind-card:hover {
+  background: $primary-50;
+}
+
+.mind-card:focus {
+  background: $primary-50;
+}
+
 // background
 
 .bg-camera {
@@ -153,12 +185,12 @@
   background: rgba(0, 0, 0, 0.3); /* 黑色 50% */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); /* Safari 支援 */
-  z-index: 1; /* 遮罩層 */
+  z-index: 0; /* 遮罩層 */
 }
 
 .camera-overlay > section {
   position: relative;
-  z-index: 2; /* 內容要蓋在遮罩之上 */
+  z-index: 1; /* 內容要蓋在遮罩之上 */
   color: white;
 }
 
