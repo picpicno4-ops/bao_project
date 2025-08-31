@@ -15,30 +15,34 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main>
-      <!-- 標題 -->
-      <div class="bg-camera camera-overlay position-relative">
+    <main class="py-4 d-flex justify-content-center bg-primary-500">
+      <section class="cell-phone bg-camera camera-overlay">
         <!-- 標題 -->
-        <section>
-          <div class="ps-6 pe-3 d-flex justify-content-between">
-            <!-- 標題 -->
-            <div class="py-2">
-              <h2 class="mb-0">AI相機</h2>
+        <div class="position-relative z-3 d-flex flex-column">
+          <!-- 標題 -->
+          <div>
+            <div class="ps-6 pe-3 d-flex justify-content-between">
+              <!-- 標題 -->
+              <div class="py-2">
+                <h2 class="mb-0 fs-5 text-white fw-bold">AI相機</h2>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- 載入 -->
-        <section>
-          <div
-            class="text-center d-flex flex-column justify-content-center vw-100 vh-100"
-          >
-            <div class="mb-3 fs-5 fw-bold text-white" id="status-text">
-              分析中...
+          <!-- 載入 -->
+          <div>
+            <div class="text-center mt-21">
+              <div class="mb-3 fs-5 fw-bold text-white" id="status-text">
+                分析中...
+              </div>
+              <!-- 載入圈 -->
+              <div
+                class="w-h-62 mx-auto text-white"
+                id="circle-container"
+              ></div>
             </div>
-            <div class="w-h-62 mx-auto text-white" id="circle-container"></div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <%- include('./layout/footer'); -%>
 
