@@ -74,6 +74,12 @@ $secondary-pink-500: #fd3636ff;
 $secondary-orange-500: #fd7a07;
 $secondary-blue-500: #109cca;
 
+// typography
+$text-primary: #0f2422ff;
+$text-secondary: #244b44ff;
+$text-tertiary: #3d8f7eff;
+$label-primary-button: #0f2422ff;
+
 $surface-bg: #eeeada;
 $mood-red: #ff6666;
 $tertiary-grey-pink: #e5d2d2;
@@ -369,6 +375,10 @@ $theme-colors: (
   "tertiary-grey-yellow": $tertiary-grey-yellow,
   "surface-bg": $surface-bg,
   "mood-red": $mood-red,
+  "text-primary": $text-primary,
+  "text-secondary": $text-secondary,
+  "text-tertiary": $text-tertiary,
+  "label-primary-button": $label-primary-button,
 ) !default;
 // scss-docs-end theme-colors-map
 
