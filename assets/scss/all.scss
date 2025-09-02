@@ -3,5 +3,9 @@
 @import "./variables/variables-dark";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./base/base";
+@import "./base/typography";
+
 @import "./custom/custom";
 @import "./custom/personal";
+@import "./pages/target";
+
