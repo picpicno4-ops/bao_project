@@ -1,0 +1,100 @@
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-primary-50 {
+  background-color: $primary-50;
+}
+.bg-primary-200 {
+  background-color: $primary-200;
+}
+.bg-primary-400 {
+  background-color: $primary-400;
+}
+
+.bg-primary-500 {
+  background-color: $primary-500;
+}
+
+.text-primary-500 {
+  color: $primary-500;
+}
+
+.text-primary-600 {
+  color: $primary-600;
+}
+
+.text-primary-950 {
+  color: $primary-950;
+}
+
+.text-netural-800 {
+  color: $neutral-800;
+}
+
+// .text-tertiary {
+//   color: $text-tertiary;
+// }
+
+.border-primary-300 {
+  border: 1px solid $primary-300;
+}
+
+// .btn {
+//   width: 100%;
+//   border-radius: 1000px;
+//   border: 0;
+//   font-weight: 700;
+//   padding-top: 16px;
+//   padding-bottom: 16px;
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+
+.btn-list {
+  width: 100%;
+  border: 0;
+  font-weight: 700;
+  border-radius: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.btn-primary {
+  background-color: $primary-300;
+  color: $primary-950;
+}
+
+.goal-icon {
+  // border: 1px solid red;
+  width: 24px;
+  height: 24px;
+}
+
+.week-info {
+  color: rgba(0, 0, 0, 0.5);
+  width: 194px;
+  overflow-wrap: break-word;
+}
+
+.img-bottom {
+  // border: 1px solid red;
+  top: 41px;
+  // left: calc(50% + 51px);
+  left: 223px;
+}
+
+.edit-btn {
+  color: $primary-400;
+  background-color: $white;
+  padding: 0;
+  border: 0;
+  height: 100%;
+}
+.bi {
+  height: 100%;
+}
