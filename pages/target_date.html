@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Air Datepicker -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.css"
+    />
+    <link rel="stylesheet" href="../assets/scss/all.scss" />
+    <title>設定目標日期</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="py-4 d-flex justify-content-center bg-primary-500">
+      <section class="cell-phone bg-surface-bg z-0">
+        <form action="/">
+          <main class="d-flex flex-column custom-height">
+            <div class="py-3 px-4 d-flex align-items-center mt-3">
+              <a href="#" class="btn p-2 border-0"
+                ><img
+                  src="/assets/images/left_line.svg"
+                  alt="回上一頁"
+                  class="d-block"
+              /></a>
+              <h1
+                class="fs-6 fw-bold lh-1 mb-0 flex-grow-1 text-center text-neutral-800"
+              >
+                規律飲食
+              </h1>
+            </div>
+            <!-- 選擇日期 -->
+            <p class="text-primary-950 lh-38 ms-10 mb-4">就今天開始吧～</p>
+
+            <div class="position-relative">
+              <div class="target-deco">
+                <img src="/assets/images/eattingrice.png" alt="eattingrice" />
+              </div>
+              <div class="bg-white p-3 border-radius-12 mx-4">
+                <p class="text-primary-800 fs-8 fw-medium lh-base mb-4">
+                  輸入日期
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p id="selectedDateText" class="text-primary-950 fs-32 mb-0">
+                    7月17日(一)
+                  </p>
+                  <button
+                    type="button"
+                    class="btn p-0 border-0 text-primary-600"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#calendarCollapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="calendarCollapse"
+                  >
+                    <img
+                      src="/assets/images/calendar_line.svg"
+                      alt="calendar_line"
+                    />
+                  </button>
+                </div>
+
+                <div class="collapse" id="calendarCollapse">
+                  <div class="pt-4 pb-3 border-top border-primary mt-4">
+                    <div id="airDatepicker"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 下一步按鈕 -->
+            <div class="mx-3 mt-auto mb-10">
+              <a
+                href="target_time.html"
+                class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
+                >下一步</a
+              >
+            </div>
+          </main>
+        </form>
+        <!-- 導覽列區塊 -->
+        <div class="position-absolute bottom-0 start-0 end-0">
+          <nav
+            class="pt-1 pb-9 px-11 bg-neutral-50 border-radius-20 shadow rounded-bottom-0"
+          >
+            <ul class="mb-0 list-unstyled d-flex justify-content-center">
+              <li class="me-3 p-1">
+                <a
+                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
+                  href="#"
+                >
+                  <div class="mb-1">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_22549_19793)">
+                        <path
+                          d="M17.6 3.53333C17.1384 3.18714 16.577 3 16 3C15.423 3 14.8616 3.18714 14.4 3.53333L5.06667 10.5333C4.73548 10.7817 4.46667 11.1038 4.28153 11.4741C4.09639 11.8444 4 12.2527 4 12.6667V25.3333C4 26.0406 4.28095 26.7189 4.78105 27.219C5.28115 27.719 5.95942 28 6.66667 28H11.8667C12.2557 28 12.6287 27.8455 12.9038 27.5704C13.1788 27.2954 13.3333 26.9223 13.3333 26.5333V20C13.3333 19.2928 13.6143 18.6145 14.1144 18.1144C14.6145 17.6143 15.2928 17.3333 16 17.3333C16.7072 17.3333 17.3855 17.6143 17.8856 18.1144C18.3857 18.6145 18.6667 19.2928 18.6667 20V26.5333C18.6667 26.9223 18.8212 27.2954 19.0962 27.5704C19.3713 27.8455 19.7444 28 20.1333 28H25.3333C26.0406 28 26.7189 27.719 27.219 27.219C27.719 26.7189 28 26.0406 28 25.3333V12.6667C28 12.2527 27.9036 11.8444 27.7185 11.4741C27.5333 11.1038 27.2645 10.7817 26.9333 10.5333L17.6 3.53333Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22549_19793">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="mb-0 fs-8">首頁</h2>
+                  </div>
+                </a>
+              </li>
+              <li class="p-1">
+                <a
+                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
+                  href="#"
+                >
+                  <div class="mb-1">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_22549_19799)">
+                        <path
+                          d="M17.3333 4C18.0061 3.99979 18.6541 4.25388 19.1474 4.71133C19.6407 5.16878 19.9429 5.79579 19.9933 6.46667L20 6.66667V28H12V6.66667C11.9998 5.9939 12.2539 5.34591 12.7113 4.8526C13.1688 4.35929 13.7958 4.05712 14.4667 4.00667L14.6667 4H17.3333ZM26.6667 10.6667C27.3739 10.6667 28.0522 10.9476 28.5523 11.4477C29.0524 11.9478 29.3333 12.6261 29.3333 13.3333V25.3333C29.3333 26.0406 29.0524 26.7189 28.5523 27.219C28.0522 27.719 27.3739 28 26.6667 28H22.6667V10.6667H26.6667ZM9.33332 14.6667V28H5.33332C4.62608 28 3.9478 27.719 3.4477 27.219C2.94761 26.7189 2.66666 26.0406 2.66666 25.3333V17.3333C2.66666 16.6261 2.94761 15.9478 3.4477 15.4477C3.9478 14.9476 4.62608 14.6667 5.33332 14.6667H9.33332Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22549_19799">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="mb-0 fs-8">分析</h2>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <div
+                  class="mx-4 p-12 d-flex align-items-center flex-column bg-primary-500 rounded-circle"
+                  style="margin-top: -20px"
+                >
+                  <div class="">
+                    <a href="camera.html">
+                      <img src="../assets/images/cross.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="me-3 p-1">
+                <a
+                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
+                  href=""
+                >
+                  <div class="mb-1">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 2.66667C23.364 2.66667 29.3333 8.636 29.3333 16C29.3333 23.364 23.364 29.3333 16 29.3333C8.63599 29.3333 2.66666 23.364 2.66666 16C2.66666 8.636 8.63599 2.66667 16 2.66667ZM19.7333 18.476C18.7376 19.455 17.3964 20.0024 16 20C14.6036 20.0024 13.2624 19.455 12.2667 18.476C12.1423 18.3505 11.9942 18.251 11.831 18.1832C11.6678 18.1155 11.4927 18.0809 11.316 18.0813C11.1393 18.0818 10.9645 18.1174 10.8017 18.1861C10.6389 18.2547 10.4913 18.3551 10.3676 18.4812C10.2439 18.6074 10.1465 18.7569 10.0811 18.9211C10.0157 19.0852 9.98357 19.2607 9.98659 19.4374C9.9896 19.6141 10.0277 19.7884 10.0987 19.9502C10.1696 20.112 10.2721 20.2581 10.4 20.38C11.8942 21.8477 13.9055 22.669 16 22.6667C18.0944 22.669 20.1058 21.8477 21.6 20.38C21.8466 20.1312 21.9854 19.7953 21.9864 19.445C21.9874 19.0947 21.8504 18.7581 21.6052 18.5079C21.3599 18.2577 21.0261 18.1142 20.6758 18.1082C20.3255 18.1022 19.987 18.2343 19.7333 18.476ZM11.3333 10.6667C10.8029 10.6667 10.2942 10.8774 9.91911 11.2525C9.54404 11.6275 9.33332 12.1362 9.33332 12.6667C9.33332 13.1971 9.54404 13.7058 9.91911 14.0809C10.2942 14.456 10.8029 14.6667 11.3333 14.6667C11.8638 14.6667 12.3725 14.456 12.7475 14.0809C13.1226 13.7058 13.3333 13.1971 13.3333 12.6667C13.3333 12.1362 13.1226 11.6275 12.7475 11.2525C12.3725 10.8774 11.8638 10.6667 11.3333 10.6667ZM20.6667 10.6667C20.1362 10.6667 19.6275 10.8774 19.2524 11.2525C18.8774 11.6275 18.6667 12.1362 18.6667 12.6667C18.6667 13.1971 18.8774 13.7058 19.2524 14.0809C19.6275 14.456 20.1362 14.6667 20.6667 14.6667C21.1971 14.6667 21.7058 14.456 22.0809 14.0809C22.4559 13.7058 22.6667 13.1971 22.6667 12.6667C22.6667 12.1362 22.4559 11.6275 22.0809 11.2525C21.7058 10.8774 21.1971 10.6667 20.6667 10.6667Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="mb-0 fs-8">正念</h2>
+                  </div>
+                </a>
+              </li>
+              <li class="p-1">
+                <a
+                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
+                  href="#"
+                >
+                  <div class="mb-1">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_22549_19812)">
+                        <path
+                          d="M16 17.3333C19.1947 17.3333 22.1 18.2587 24.2373 19.5627C25.304 20.2133 26.216 20.9813 26.8747 21.816C27.5227 22.636 28 23.6173 28 24.6667C28 25.7933 27.452 26.6813 26.6627 27.3147C25.916 27.9147 24.9307 28.312 23.884 28.5893C21.78 29.1453 18.972 29.3333 16 29.3333C13.028 29.3333 10.22 29.1467 8.116 28.5893C7.06933 28.312 6.084 27.9147 5.33733 27.3147C4.54667 26.68 4 25.7933 4 24.6667C4 23.6173 4.47733 22.636 5.12533 21.8147C5.784 20.9813 6.69467 20.2147 7.76267 19.5613C9.9 18.26 12.8067 17.3333 16 17.3333ZM16 2.66667C17.7681 2.66667 19.4638 3.36905 20.714 4.61929C21.9643 5.86953 22.6667 7.56522 22.6667 9.33333C22.6667 11.1014 21.9643 12.7971 20.714 14.0474C19.4638 15.2976 17.7681 16 16 16C14.2319 16 12.5362 15.2976 11.286 14.0474C10.0357 12.7971 9.33333 11.1014 9.33333 9.33333C9.33333 7.56522 10.0357 5.86953 11.286 4.61929C12.5362 3.36905 14.2319 2.66667 16 2.66667Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22549_19812">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="mb-0 fs-8">個人</h2>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.js"></script>
+    <script>
+      // Air Datepicker 月曆
+      // 語系資料
+      const zh = {
+        days: [
+          "星期日",
+          "星期一",
+          "星期二",
+          "星期三",
+          "星期四",
+          "星期五",
+          "星期六",
+        ],
+        daysShort: ["週日", "週一", "週二", "週三", "週四", "週五", "週六"],
+        daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+        months: [
+          "一月",
+          "二月",
+          "三月",
+          "四月",
+          "五月",
+          "六月",
+          "七月",
+          "八月",
+          "九月",
+          "十月",
+          "十一月",
+          "十二月",
+        ],
+        monthsShort: [
+          "1月",
+          "2月",
+          "3月",
+          "4月",
+          "5月",
+          "6月",
+          "7月",
+          "8月",
+          "9月",
+          "10月",
+          "11月",
+          "12月",
+        ],
+        today: "今天",
+        clear: "清除",
+        format: "yyyy/mm/dd",
+        timeFormat: "hh:mm aa",
+        firstDay: 0,
+      };
+
+      // 工具：把 Date 轉成「7月17日(一)」
+      function formatForHeading(date) {
+        const days = ["日", "一", "二", "三", "四", "五", "六"];
+        const m = date.getMonth() + 1;
+        const d = date.getDate();
+        const w = days[date.getDay()];
+        return `${m}月${d}日(${w})`;
+      }
+
+      // 設定停用日期
+      // const disabledDate = ["2025-08-01", "2025-08-05"];
+
+      const selectedDateTextEl = document.getElementById("selectedDateText");
+      // 預設選取今天
+      const today = new Date();
+      // 一進頁就把標題改成今天
+      selectedDateTextEl.textContent = formatForHeading(today);
+
+      // 加入月曆
+      const dp = new AirDatepicker("#airDatepicker", {
+        inline: true,
+        locale: zh,
+        // 預設選取的日期
+        selectedDates: [today],
+        navTitles: {
+          days: `
+                    <div class="custom-nav-title">
+                    <span class="nav-year">yyyy 年</span>
+                    <span class="nav-month">M 月</span>
+                    </div>
+                `,
+        },
+        showOtherMonths: false,
+        // 每次選取時更新文字
+        onSelect({ date }) {
+          if (date) {
+            selectedDateTextEl.textContent = formatForHeading(date);
+          }
+        },
+      });
+      dp.disableDate(disabledDate);
+
+      // 一開始就把預設選到的日期顯示出來
+      // 如果你有用 selectedDates，上面會是今天
+      const initial = dp.selectedDates?.[0] || today;
+      selectedDateTextEl.textContent = formatForHeading(initial);
+    </script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+.h-120 {
+  height: 120px;
+}
+.min-w-163 {
+  min-width: 163px;
+}
+
+// Air Datepicker 月曆
+#airDatepicker .air-datepicker {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.air-datepicker.-inline- {
+  border: none;
+  border-radius: 13px;
+  box-shadow: 0 10px 60px 0 rgba($color: #000000, $alpha: 0.1);
+}
+.air-datepicker-nav {
+  border: none;
+  padding: 7px 16px 8px 16px;
+  gap: 28px;
+  align-items: center;
+  .air-datepicker-nav--title {
+    order: -1;
+    margin-right: auto;
+    font-weight: bold;
+    color: $primary-950;
+  }
+  .air-datepicker-nav--title:active {
+    background: $primary-100;
+  }
+  .air-datepicker-nav--title:hover {
+    background: $primary-100;
+  }
+  .air-datepicker-nav--action {
+    width: 24px;
+    height: 32px;
+  }
+  .air-datepicker-nav--action:active {
+    background: $primary-100;
+  }
+  .air-datepicker-nav--action:hover {
+    background: $primary-100;
+  }
+}
+
+// 隱藏內建 svg
+#airDatepicker .air-datepicker-nav--action > svg {
+  display: none;
+}
+// 左箭頭
+#airDatepicker .air-datepicker-nav--action[data-action="prev"]::before {
+  content: "";
+  width: 12px;
+  height: 20px;
+  display: block;
+  background: url("/assets/images/Previous.svg") no-repeat center/contain;
+}
+// 右箭頭
+#airDatepicker .air-datepicker-nav--action[data-action="next"]::before {
+  content: "";
+  width: 12px;
+  height: 20px;
+  display: block;
+  background: url("/assets/images/Next.svg") no-repeat center/contain;
+}
+
+.air-datepicker-body--day-names {
+  margin: 0 16px;
+}
+.air-datepicker-body--day-name {
+  color: $primary-500;
+  font-weight: bold;
+}
+.air-datepicker-cell {
+  margin-right: auto;
+  margin-left: auto;
+  height: 36px;
+}
+.air-datepicker-body--cells.-days- {
+  row-gap: 8px;
+}
+.air-datepicker-cell.-day- {
+  border-radius: 50%;
+  width: 36px;
+}
+.air-datepicker-cell.-month-,
+.air-datepicker-cell.-year- {
+  padding: 4px 8px;
+}
+.air-datepicker-cell.-current- {
+  color: $primary-600;
+}
+.air-datepicker-cell.-focus- {
+  color: $primary-600;
+  background: $primary-100;
+  font-weight: bold;
+  font-size: 20px;
+}
+.air-datepicker-cell.-selected- {
+  color: $primary-600;
+  background: $primary-100;
+  font-weight: bold;
+  font-size: 20px;
+}
+.air-datepicker-cell.-selected-.-current- {
+  color: $primary-600;
+  background: $primary-100;
+  font-weight: bold;
+  font-size: 20px;
+}
+.air-datepicker-cell.-selected-.-focus- {
+  color: $primary-600;
+  background: $primary-100;
+  font-weight: bold;
+  font-size: 20px;
+}
+.air-datepicker-body--cells.-days- {
+  padding: 0 16px 16px;
+}
+
+.form-check-input:checked {
+  background-color: $primary-500;
+  border-color: $primary-500;
+}
+
+.custom-height {
+  height: calc(100vh - 95px);
+}
+
+.target-deco {
+  position: absolute;
+  right: 41px;
+  top: -71px;
+  z-index: -1;
+}
+
+.goals-img {
+  height: 243px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30% center;
+  }
+}
+
+.bg-confirm {
+  background: linear-gradient(180deg, $surface-bg 25%, $primary-400 60%);
+}
