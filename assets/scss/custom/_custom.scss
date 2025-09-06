@@ -255,3 +255,12 @@
 .transform-rotate-90{
   transform:rotate(90deg);
 }
+
+//心情感受icon
+.redMood{
+  fill: #E5D2D2;
+  &:hover{
+    fill:#FF6666;
+  }
+}
+
