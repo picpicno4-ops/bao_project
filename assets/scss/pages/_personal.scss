@@ -18,6 +18,10 @@
   background-color: $primary-500;
 }
 
+.bg-yellow-400 {
+  background-color: $secondary-yellow-400;
+}
+
 .text-primary-500 {
   color: $primary-500;
 }
@@ -30,28 +34,17 @@
   color: $primary-950;
 }
 
+.text-netural-500 {
+  color: $neutral-500;
+}
+
 .text-netural-800 {
   color: $neutral-800;
 }
 
-// .text-tertiary {
-//   color: $text-tertiary;
-// }
-
 .border-primary-300 {
   border: 1px solid $primary-300;
 }
-
-// .btn {
-//   width: 100%;
-//   border-radius: 1000px;
-//   border: 0;
-//   font-weight: 700;
-//   padding-top: 16px;
-//   padding-bottom: 16px;
-//   padding-left: 0;
-//   padding-right: 0;
-// }
 
 .btn-list {
   width: 100%;
