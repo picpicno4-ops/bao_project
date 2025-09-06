@@ -11,12 +11,14 @@
       rel="stylesheet"
     />
     <title>index</title>
-    <script type="module" crossorigin src="/bao_project/assets/main-C4ySxnuh.js"></script>
-    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-DpB_P0RE.css">
+    <script type="module" crossorigin src="/bao_project/assets/main-CHH4D_w4.js"></script>
+    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-ClgIhXMe.css">
   </head>
   <body>
         <main class="py-4 d-flex justify-content-center bg-primary-500">
       <section class="bg-surface-bg">
+        <!-- 保留狀態列高度 -->
+        <div class="h-54"></div>
         <!-- 日期區塊 -->
         <div class="mb-18 px-3 d-flex justify-content-start align-items-center">
           <div class="d-flex justify-content-center align-items-center">
@@ -50,7 +52,7 @@
             <div class="d-flex justify-content-center align-items-center">
               <div class="d-flex justify-content-center align-items-center">
                 <div>
-                  <h2 class="mb-0 fs-6 text-neutral-800 fw-bold">
+                  <h2 class="mb-0 fs-9 text-neutral-800 fw-bold">
                     7 月 14 日 星期一
                   </h2>
                 </div>
@@ -154,13 +156,26 @@
             </div>
           </div>
           <!-- 選項區塊 -->
-          <ul
-            class="mb-18 list-unstyled bg-white border-radius-12 p-3 d-flex justify-content-between"
+
+          <div
+            class="type-group mb-18 list-unstyled bg-white border-radius-12 p-3 d-flex justify-content-between"
           >
-            <li class="p-2">
-              <a href="#">
-                <!-- 圖片 -->
-                <div class="mb-1 p-7 breakfast rounded-circle">
+            <!-- 早餐 -->
+            <div class="p-2">
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio100"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="nav-option-btn mb-1 p-7 breakfast-option-btn rounded-circle"
+                for="btnradio100"
+              >
+                <!-- 符號 -->
+                <div class="">
                   <svg
                     class="text-white"
                     width="24"
@@ -177,16 +192,26 @@
                     />
                   </svg>
                 </div>
-                <!-- 文字 -->
-                <div>
-                  <p class="mb-0 fs-8 text-primary-950 text-center">早餐</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-2">
-              <a href="#">
-                <!-- 圖片 -->
-                <div class="mb-1 p-7 lunch rounded-circle">
+              </label>
+              <div>
+                <p class="mb-0 fs-9 text-primary-950 text-center">早餐</p>
+              </div>
+            </div>
+            <!-- 午餐 -->
+            <div class="p-2">
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio101"
+                autocomplete="off"
+              />
+              <label
+                class="nav-option-btn mb-1 p-7 lunch-option-btn rounded-circle"
+                for="btnradio101"
+              >
+                <!-- 符號 -->
+                <div class="">
                   <svg
                     class="text-white"
                     width="25"
@@ -213,16 +238,26 @@
                     </defs>
                   </svg>
                 </div>
-                <!-- 文字 -->
-                <div>
-                  <p class="mb-0 fs-8 text-primary-950 text-center">午餐</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-2">
-              <a href="#">
-                <!-- 圖片 -->
-                <div class="mb-1 p-7 dinner rounded-circle">
+              </label>
+              <div>
+                <p class="mb-0 fs-9 text-primary-950 text-center">午餐</p>
+              </div>
+            </div>
+            <!-- 晚餐 -->
+            <div class="p-2">
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio102"
+                autocomplete="off"
+              />
+              <label
+                class="nav-option-btn mb-1 p-7 dinner-option-btn rounded-circle"
+                for="btnradio102"
+              >
+                <!-- 符號 -->
+                <div class="">
                   <svg
                     class="text-white"
                     width="25"
@@ -239,16 +274,26 @@
                     />
                   </svg>
                 </div>
-                <!-- 文字 -->
-                <div>
-                  <p class="mb-0 fs-8 text-primary-950 text-center">晚餐</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-2">
-              <a href="#">
-                <!-- 圖片 -->
-                <div class="mb-1 p-7 dessert rounded-circle">
+              </label>
+              <div>
+                <p class="mb-0 fs-9 text-primary-950 text-center">晚餐</p>
+              </div>
+            </div>
+            <!-- 點心 -->
+            <div class="p-2">
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio103"
+                autocomplete="off"
+              />
+              <label
+                class="nav-option-btn mb-1 p-7 dessert-option-btn rounded-circle"
+                for="btnradio103"
+              >
+                <!-- 符號 -->
+                <div class="">
                   <svg
                     class="text-white"
                     width="24"
@@ -272,15 +317,17 @@
                     </defs>
                   </svg>
                 </div>
-                <!-- 文字 -->
-                <div>
-                  <p class="mb-0 fs-8 text-primary-950 text-center">晚餐</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+              </label>
+              <div>
+                <p class="mb-0 fs-9 text-primary-950 text-center">點心</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 文字 -->
+
           <!-- 食物內容區塊 -->
-          <div class="mb-18 bg-white border-radius-12 p-3">
+          <div class="mb-18 bg-white border-radius-12 px-3 pt-2 pb-3">
             <!-- 標題 -->
             <div
               class="mb-2 py-12 d-flex justify-content-between align-items-center"
@@ -319,14 +366,14 @@
               </div>
             </div>
             <input
-              class="form-control form-control-sm py-2 border-0 bg-neutral-50"
+              class="form-control form-control-sm py-2 border-0 rounded-3 bg-neutral-50"
               type="text"
               placeholder="雞肉沙拉"
               aria-label=".form-control-sm example"
             />
           </div>
           <!-- 時間區塊 -->
-          <div class="mb-18 bg-white border-radius-12 p-3">
+          <div class="mb-18 bg-white border-radius-12 px-3 pt-2 pb-3">
             <!-- 標題 -->
             <div
               class="mb-2 py-12 d-flex justify-content-between align-items-center"
@@ -361,7 +408,7 @@
               </div>
             </div>
             <input
-              class="form-control form-control-sm py-2 border-0 bg-neutral-50"
+              class="form-control form-control-sm py-2 border-0 rounded-3 bg-neutral-50"
               type="text"
               placeholder="9:00 AM"
               aria-label=".form-control-sm example"
@@ -371,5 +418,6 @@
       </section>
     </main>
     
+    <script src="../change_page.js"></script>
   </body>
 </html>

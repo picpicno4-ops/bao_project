@@ -11,37 +11,45 @@
       rel="stylesheet"
     />
     <title>index</title>
-    <script type="module" crossorigin src="/bao_project/assets/main-C4ySxnuh.js"></script>
-    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-DpB_P0RE.css">
+    <script type="module" crossorigin src="/bao_project/assets/main-CHH4D_w4.js"></script>
+    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-ClgIhXMe.css">
   </head>
   <body>
         <main class="py-4 d-flex justify-content-center bg-primary-500">
-      <section class="cell-phone bg-camera camera-overlay">
-        <!-- 標題 -->
-        <div class="position-relative z-3 d-flex flex-column">
+      <section
+        class="cell-phone bg-camera camera-overlay d-flex flex-column justify-content-between"
+      >
+        <div>
+          <!-- 保留狀態列高度 -->
+          <div class="h-54"></div>
           <!-- 標題 -->
-          <div>
-            <div class="ps-6 pe-3 d-flex justify-content-between">
-              <!-- 標題 -->
-              <div class="py-2">
-                <h2 class="mb-0 fs-5 text-white fw-bold">AI相機</h2>
+          <div class="position-relative z-3 d-flex flex-column">
+            <!-- 標題 -->
+            <div>
+              <div class="ps-6 pe-3 d-flex justify-content-between">
+                <!-- 標題 -->
+                <div class="py-2">
+                  <h2 class="mb-0 fs-5 text-white fw-bold">AI相機</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- 載入 -->
-          <div>
-            <div class="text-center mt-21">
-              <div class="mb-3 fs-5 fw-bold text-white" id="status-text">
-                分析中...
+            <!-- 載入 -->
+            <div>
+              <div class="text-center mt-21">
+                <div class="mb-3 fs-5 fw-bold text-white" id="status-text">
+                  分析中...
+                </div>
+                <!-- 載入圈 -->
+                <div
+                  class="w-h-62 mx-auto text-white z-1"
+                  id="circle-container"
+                ></div>
               </div>
-              <!-- 載入圈 -->
-              <div
-                class="w-h-62 mx-auto text-white"
-                id="circle-container"
-              ></div>
             </div>
           </div>
         </div>
+        <!-- 載入 -->
+        <div class="h-21"></div>
       </section>
     </main>
     

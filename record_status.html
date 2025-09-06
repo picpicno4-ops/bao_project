@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <title>index</title>
-    <script type="module" crossorigin src="/bao_project/assets/main-C4ySxnuh.js"></script>
-    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-DpB_P0RE.css">
+    <script type="module" crossorigin src="/bao_project/assets/main-CHH4D_w4.js"></script>
+    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-ClgIhXMe.css">
   </head>
   <body>
     
@@ -94,13 +94,15 @@
           </div>
         </div>
       </section> -->
+        <!-- 保留狀態列高度 -->
+        <div class="h-54 bg-white"></div>
         <div>
           <!-- 日期區塊 -->
           <div class="pb-7 px-3 d-flex justify-content-end bg-white">
             <!-- 日期 -->
             <div class="me-14 d-flex justify-content-center align-items-center">
               <div>
-                <h2 class="mb-0 fs-6 text-neutral-800 fw-bold">
+                <h2 class="mb-0 fs-9 text-neutral-800 fw-bold">
                   7 月 14 日 星期一
                 </h2>
               </div>
@@ -158,16 +160,16 @@
         </div>
         <!-- 早安 -->
         <div>
-          <div class="pb-7 py-2 ps-6 bg-white">
+          <div class="py-2 ps-6 bg-white">
             <h1 class="mb-0 fs-5 fw-bold lh-sm">早安，Ethan!</h1>
           </div>
         </div>
         <!-- 恭喜 -->
-        <div class="pb-5 bg-white">
-          <div class="pt-1 pe-9 d-flex justify-content-end">
+        <div class="pb-22 bg-white">
+          <div class="pe-9 d-flex justify-content-end">
             <h2 class="mb-0">
               <span
-                class="py-8 px-7 fs-7 text-primary-600 fw-normal rounded-3 bg-primary-300 max-w-128 d-flex"
+                class="py-8 px-7 fs-7 text-primary-600 fw-normal rounded-3 bg-primary-100 max-w-128 d-flex"
                 >恭喜你紀錄今天的 第一餐，持續保持 吧！</span
               >
             </h2>
@@ -176,39 +178,96 @@
         <!-- 插圖區塊、紀錄內容區塊 -->
         <div>
           <!-- 插圖 -->
-          <div class="bg-surface-bg">
+          <div class="h-70 bg-surface-bg">
             <div class="max-w-142 mx-auto">
-              <img
+              <svg
                 class="margin-top--50"
-                src="data:image/png;base64,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"
-                alt="飽寶"
-              />
+                width="143"
+                height="123"
+                viewBox="0 0 143 123"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_20523_39635)">
+                  <path
+                    d="M139.587 80.0257C139.527 77.9292 139.107 75.8327 138.448 73.8561C136.888 69.2438 134.189 65.1107 131.729 60.9177C127.471 53.61 123.872 45.8829 121.052 37.8563C118.593 30.8481 116.194 23.8997 110.915 18.3889C105.697 12.9381 99.5184 8.44559 92.6803 5.27091C86.322 2.33583 79.4839 0.478936 72.4659 0.0596383C71.7461 -0.000261366 71.0263 -0.000261365 70.3065 -0.000261365C51.4117 -0.35966 32.517 9.94309 23.2795 26.4155C18.9607 34.2025 16.7413 42.9478 12.5425 50.8546C9.54334 56.545 5.52445 61.6365 2.8252 67.5067C0.125952 73.3769 -1.19368 80.2653 1.50557 86.0756C4.20482 91.8859 11.9427 95.5397 17.4611 92.2453C20.3403 98.1154 23.2795 104.045 26.1587 109.916C27.8383 113.33 29.6378 116.864 32.457 119.44C38.9952 125.25 50.6319 123.513 55.1307 116.025C55.8505 114.887 56.3903 113.629 57.47 112.851C58.7297 111.952 60.3492 111.952 61.8488 111.892C67.4872 111.832 73.1257 111.832 78.7641 111.773C79.7239 111.773 80.8036 111.773 81.6433 112.192C82.903 112.791 83.5628 114.169 84.2826 115.307C88.6014 122.375 99.2184 125.43 105.697 120.278C108.216 118.302 109.835 115.426 111.395 112.671C114.574 107.1 117.753 101.47 120.932 95.8991C121.352 95.1803 122.372 93.9823 122.732 93.2037C123.032 93.3235 123.872 93.8026 124.711 94.1021C124.771 94.1021 124.891 94.162 124.951 94.162C129.93 94.8808 135.148 92.3051 137.668 87.9924C139.167 85.5964 139.647 82.841 139.587 80.0257Z"
+                    fill="#B0DFD1"
+                  />
+                  <path
+                    d="M46.1902 41.6298C46.1303 45.703 42.4713 49.5965 38.3924 49.3569C33.6537 49.0574 30.4746 46.4218 30.2347 41.0907C30.0547 36.9577 34.3135 33.1241 38.5724 33.2439C42.8912 33.4236 46.2502 37.0775 46.1902 41.6298Z"
+                    fill="#FFB4B4"
+                  />
+                  <path
+                    d="M107.974 41.3911C107.974 45.644 104.255 49.3578 99.9959 49.4776C96.3969 49.5974 91.7782 44.8054 91.9581 41.2713C92.1381 37.8571 95.1972 33.7839 97.8965 33.7839C104.195 33.7839 107.914 36.5992 107.974 41.3911Z"
+                    fill="#FFB4B4"
+                  />
+                  <path
+                    d="M69.1666 41.8697C68.3868 41.9296 67.667 41.9296 66.8872 41.8098C64.128 41.3905 61.4887 40.3722 59.6892 37.7965C59.1493 37.0178 58.9694 36.1792 59.9891 35.4005C61.0688 34.502 61.6686 35.4005 62.0885 35.9396C63.6481 37.7965 65.8675 38.5752 67.9069 38.8747C69.7664 39.1143 71.9258 38.4554 73.5454 37.0178C73.9652 36.5985 74.4451 36.2391 74.805 35.7599C75.5848 34.8015 76.4246 34.7416 77.3243 35.5802C78.404 36.4787 77.8642 37.3173 77.2043 38.1559C75.2249 40.8514 72.3457 41.5103 69.1666 41.8697Z"
+                    fill="#404948"
+                  />
+                  <path
+                    d="M50.87 33.7827C52.6258 33.7827 54.0492 32.3614 54.0492 30.608C54.0492 28.8547 52.6258 27.4333 50.87 27.4333C49.1143 27.4333 47.6909 28.8547 47.6909 30.608C47.6909 32.3614 49.1143 33.7827 50.87 33.7827Z"
+                    fill="#404948"
+                  />
+                  <path
+                    d="M86.2007 33.7827C87.9564 33.7827 89.3798 32.3614 89.3798 30.608C89.3798 28.8547 87.9564 27.4333 86.2007 27.4333C84.4449 27.4333 83.0215 28.8547 83.0215 30.608C83.0215 32.3614 84.4449 33.7827 86.2007 33.7827Z"
+                    fill="#404948"
+                  />
+                  <path
+                    d="M17.5148 70.082C15.2355 74.215 14.1558 78.1684 14.1558 78.1684C13.7359 79.7857 13.436 84.1584 13.316 87.2732C13.256 89.3697 13.5559 91.4662 14.3357 93.4428C15.4154 93.2631 16.4351 92.9037 17.3949 92.3647C14.0958 85.8955 17.5148 70.082 17.5148 70.082Z"
+                    fill="#96BFB2"
+                  />
+                  <path
+                    d="M123.865 93.7426C123.385 93.5031 122.965 93.3235 122.786 93.2038C123.145 93.4433 123.505 93.6229 123.865 93.7426Z"
+                    fill="#96BFB2"
+                  />
+                  <path
+                    d="M126.866 88.1725C126.747 85.0578 126.507 80.745 126.027 79.0678C126.027 79.0678 124.947 75.1144 122.668 70.9813C122.668 70.9813 126.087 86.7349 122.788 93.2041C122.968 93.264 123.387 93.5036 123.867 93.7432C124.167 93.863 124.467 94.0427 124.827 94.1026C124.887 94.1026 125.007 94.1625 125.067 94.1625C125.247 94.1625 125.367 94.2224 125.547 94.2224C125.667 94.2224 125.787 94.2224 125.907 94.2823C126.627 92.3655 126.926 90.269 126.866 88.1725Z"
+                    fill="#96BFB2"
+                  />
+                  <path
+                    d="M71.6193 111.773C60.5824 112.193 39.9481 110.156 39.9481 110.156C45.3466 113.211 50.5652 115.008 55.1839 116.026C55.9037 114.888 56.4435 113.63 57.5232 112.852C58.7829 111.953 60.4024 111.953 61.902 111.893C67.5405 111.833 73.1789 111.833 78.8173 111.773C79.7771 111.773 80.8568 111.773 81.6965 112.193C82.9562 112.792 83.616 114.169 84.3358 115.308C84.3958 115.427 84.5158 115.547 84.5757 115.667C95.2528 113.511 102.451 109.258 102.451 109.258C96.4524 111.354 71.6193 111.773 71.6193 111.773Z"
+                    fill="#96BFB2"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20523_39635">
+                    <rect width="142.481" height="123" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
           </div>
           <!-- 心情指數、餐點紀錄 -->
-          <div class="py-4 px-18 bg-surface-bg">
+          <div class="py-3 px-3 bg-surface-bg">
             <!-- 心情指數區塊 -->
             <div class="mb-18 px-18 py-3 bg-white border-radius-12">
               <!-- 標題 -->
               <div class="mb-2 d-flex align-items-center">
                 <div class="me-1">
                   <svg
-                    class="text-neutral-800"
                     width="20"
                     height="20"
-                    viewBox="0 0 20 20"
+                    viewBox="0 0 30 30"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M9.99984 1.66666C14.6023 1.66666 18.3332 5.39749 18.3332 9.99999C18.3332 14.6025 14.6023 18.3333 9.99984 18.3333C5.39734 18.3333 1.6665 14.6025 1.6665 9.99999C1.6665 5.39749 5.39734 1.66666 9.99984 1.66666ZM9.99984 3.33332C8.23173 3.33332 6.53604 4.0357 5.28579 5.28594C4.03555 6.53619 3.33317 8.23188 3.33317 9.99999C3.33317 11.7681 4.03555 13.4638 5.28579 14.714C6.53604 15.9643 8.23173 16.6667 9.99984 16.6667C11.7679 16.6667 13.4636 15.9643 14.7139 14.714C15.9641 13.4638 16.6665 11.7681 16.6665 9.99999C16.6665 8.23188 15.9641 6.53619 14.7139 5.28594C13.4636 4.0357 11.7679 3.33332 9.99984 3.33332ZM12.3332 11.5475C12.4109 11.4691 12.5035 11.4069 12.6055 11.3645C12.7075 11.3222 12.8169 11.3005 12.9273 11.3008C13.0377 11.3011 13.147 11.3234 13.2488 11.3663C13.3505 11.4092 13.4428 11.4719 13.5201 11.5508C13.5974 11.6296 13.6582 11.7231 13.6991 11.8257C13.74 11.9282 13.7601 12.0379 13.7582 12.1484C13.7563 12.2588 13.7325 12.3677 13.6882 12.4689C13.6438 12.57 13.5798 12.6613 13.4998 12.7375C12.566 13.6548 11.3089 14.1681 9.99984 14.1667C8.69081 14.1681 7.4337 13.6548 6.49984 12.7375C6.3457 12.582 6.25894 12.3721 6.25834 12.1531C6.25774 11.9342 6.34333 11.7238 6.49661 11.5674C6.64989 11.4111 6.85855 11.3213 7.07747 11.3176C7.29639 11.3139 7.50798 11.3965 7.6665 11.5475C8.28886 12.1593 9.1271 12.5015 9.99984 12.5C10.9082 12.5 11.7307 12.1375 12.3332 11.5475ZM7.08317 6.66666C7.41469 6.66666 7.73263 6.79835 7.96705 7.03277C8.20148 7.26719 8.33317 7.58514 8.33317 7.91666C8.33317 8.24818 8.20148 8.56612 7.96705 8.80054C7.73263 9.03496 7.41469 9.16666 7.08317 9.16666C6.75165 9.16666 6.43371 9.03496 6.19929 8.80054C5.96487 8.56612 5.83317 8.24818 5.83317 7.91666C5.83317 7.58514 5.96487 7.26719 6.19929 7.03277C6.43371 6.79835 6.75165 6.66666 7.08317 6.66666ZM12.9165 6.66666C13.248 6.66666 13.566 6.79835 13.8004 7.03277C14.0348 7.26719 14.1665 7.58514 14.1665 7.91666C14.1665 8.24818 14.0348 8.56612 13.8004 8.80054C13.566 9.03496 13.248 9.16666 12.9165 9.16666C12.585 9.16666 12.267 9.03496 12.0326 8.80054C11.7982 8.56612 11.6665 8.24818 11.6665 7.91666C11.6665 7.58514 11.7982 7.26719 12.0326 7.03277C12.267 6.79835 12.585 6.66666 12.9165 6.66666Z"
-                      fill="currentColor"
-                    />
+                    <g clip-path="url(#clip0_22631_21749)">
+                      <path
+                        d="M15 2.5C21.9037 2.5 27.5 8.09625 27.5 15C27.5 21.9037 21.9037 27.5 15 27.5C8.09625 27.5 2.5 21.9037 2.5 15C2.5 8.09625 8.09625 2.5 15 2.5ZM15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.8043 23.9464 12.3478 25 15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5ZM18.5 17.3213C18.6166 17.2036 18.7555 17.1103 18.9085 17.0468C19.0615 16.9833 19.2255 16.9508 19.3912 16.9513C19.5569 16.9517 19.7208 16.9851 19.8734 17.0495C20.026 17.1138 20.1644 17.2079 20.2803 17.3262C20.3963 17.4445 20.4876 17.5846 20.5489 17.7385C20.6103 17.8924 20.6404 18.0569 20.6376 18.2226C20.6347 18.3882 20.599 18.5516 20.5325 18.7033C20.466 18.855 20.3699 18.992 20.25 19.1063C18.8492 20.4822 16.9635 21.2522 15 21.25C13.0365 21.2522 11.1508 20.4822 9.75 19.1063C9.51879 18.873 9.38866 18.5581 9.38775 18.2297C9.38685 17.9013 9.51523 17.5857 9.74516 17.3512C9.97508 17.1166 10.2881 16.982 10.6164 16.9764C10.9448 16.9708 11.2622 17.0947 11.5 17.3213C12.4335 18.239 13.6909 18.7523 15 18.75C16.3625 18.75 17.5963 18.2063 18.5 17.3213ZM10.625 10C11.1223 10 11.5992 10.1975 11.9508 10.5492C12.3025 10.9008 12.5 11.3777 12.5 11.875C12.5 12.3723 12.3025 12.8492 11.9508 13.2008C11.5992 13.5525 11.1223 13.75 10.625 13.75C10.1277 13.75 9.65081 13.5525 9.29917 13.2008C8.94754 12.8492 8.75 12.3723 8.75 11.875C8.75 11.3777 8.94754 10.9008 9.29917 10.5492C9.65081 10.1975 10.1277 10 10.625 10ZM19.375 10C19.8723 10 20.3492 10.1975 20.7008 10.5492C21.0525 10.9008 21.25 11.3777 21.25 11.875C21.25 12.3723 21.0525 12.8492 20.7008 13.2008C20.3492 13.5525 19.8723 13.75 19.375 13.75C18.8777 13.75 18.4008 13.5525 18.0492 13.2008C17.6975 12.8492 17.5 12.3723 17.5 11.875C17.5 11.3777 17.6975 10.9008 18.0492 10.5492C18.4008 10.1975 18.8777 10 19.375 10Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_22631_21749">
+                        <rect width="30" height="30" fill="white" />
+                      </clipPath>
+                    </defs>
                   </svg>
                 </div>
                 <div class="pt-1">
                   <h2 class="mb-0 fs-8 text-neutral-800 fw-bold lh-sm">
-                    心情指數
+                    本日心情指數
                   </h2>
                 </div>
               </div>
@@ -368,7 +427,7 @@
                 </div>
               </div>
               <!-- 內容 -->
-              <div class="d-flex align-items-start">
+              <div class="p-7 d-flex align-items-start border border-neutral-100 rounded-3">
                 <!-- 心情指數 -->
                 <div class="me-7 p-2 bg-mood-red rounded-3">
                   <svg
@@ -388,7 +447,7 @@
                   </svg>
                 </div>
                 <!-- 紀錄 -->
-                <div>
+                <div class="max-w-211">
                   <!-- 標題 -->
                   <div
                     class="mb-2 d-flex justify-content-between align-items-center"
@@ -430,12 +489,14 @@
                     </div>
                     <!-- 文字 -->
                     <div>
-                      <h4 class="mb-0 pt-1 fs-8 text-neutral-800">工作</h4>
+                      <h4 class="mb-0 pt-1 fs-8 text-neutral-800 fw-normal">
+                        工作
+                      </h4>
                     </div>
                   </div>
                   <!-- 日記 -->
                   <div class="mb-2">
-                    <p class="mb-0 fs-8 text-neutral-800">
+                    <p class="mb-0 fs-9 text-neutral-800">
                       早上有重大會議，吃飯都覺得壓力好大。
                     </p>
                   </div>
@@ -444,7 +505,7 @@
                     class="py-1 ps-2 pe-3 bg-neutral-50 rounded-pill d-flex align-items-center"
                   >
                     <!-- 播放符號 -->
-                    <div class="me-7">
+                    <div class="me-24">
                       <svg
                         class="text-neutral-500"
                         width="24"
@@ -467,7 +528,7 @@
                       </svg>
                     </div>
                     <!-- 播放狀態符號 -->
-                    <div class="me-7">
+                    <div class="me-24">
                       <svg
                         width="80"
                         height="16"
@@ -610,8 +671,8 @@
                       </svg>
                     </div>
                     <!-- 時間 -->
-                    <div class="me-7">
-                      <p class="mb-0 text-neutral-500">0:05</p>
+                    <div class="me-24">
+                      <p class="mb-0 fs-8 text-neutral-500">0:05</p>
                     </div>
                     <!-- 音量 -->
                     <div>
@@ -642,17 +703,29 @@
             </div>
           </div>
         </div>
-        <!-- 選單 -->
+        <!-- nav按鈕選項2 -->
         <div class="position-absolute bottom-0 start-0 end-0">
-          <nav
-            class="pt-1 pb-9 px-11 bg-neutral-50 border-radius-20 shadow rounded-bottom-0"
-          >
-            <ul class="mb-0 list-unstyled d-flex justify-content-center">
-              <li class="me-3 p-1">
-                <a
-                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
-                  href="#"
+                <div
+                  class="btn-group pt-1 pb-15 px-11 bg-neutral-50 border-radius-20 shadow rounded-bottom-0  list-unstyled d-flex justify-content-center"
+                  role="group"
+                  aria-label="Basic radio toggle button group"
                 >
+                  <!-- 首頁 -->
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio4"
+                    autocomplete="off"
+                    checked
+                    data-href="mindfulness.html"
+                  />
+                  <label
+                  class="nav-option-btn me-3 p-1 fs-9 fw-normal d-flex jusrify-content-center align-items-center flex-column"
+                    for="btnradio4"
+                  >
+                  <!-- 符號 -->
+                   
                   <div class="mb-1">
                     <svg
                       width="32"
@@ -674,18 +747,26 @@
                       </defs>
                     </svg>
                   </div>
-                  <div>
-                    <h2 class="mb-0 fs-8">首頁</h2>
-                  </div>
-                </a>
-              </li>
-              <li class="p-1">
-                <a
-                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
-                  href="#"
-                >
+                    首頁
+                    </label
+                  >
+                  <!-- 分析 -->
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio5"
+                    autocomplete="off"
+                    
+                  />
+                  <label
+                  class="nav-option-btn p-1 fs-9 fw-normal d-flex jusrify-content-center align-items-center flex-column"
+                    for="btnradio5"
+                  >
+                  <!-- 符號 -->
+                 
                   <div class="mb-1">
-                    <svg
+                   <svg
                       width="32"
                       height="32"
                       viewBox="0 0 32 32"
@@ -705,16 +786,14 @@
                       </defs>
                     </svg>
                   </div>
-                  <div>
-                    <h2 class="mb-0 fs-8">分析</h2>
-                  </div>
-                </a>
-              </li>
+                    分析
+                    </label
+                  >
 
-              <li>
-                <div
-                  class="mx-4 p-12 d-flex align-items-center flex-column bg-primary-500 rounded-circle"
-                  style="margin-top: -20px"
+                  <!-- 拍照 -->
+                <div>
+                  <div
+                  class="mx-4 p-12 d-flex align-items-center flex-column bg-primary-500 rounded-circle margin-top--20"
                 >
                   <div class="">
                     <a href="camera.html">
@@ -722,13 +801,27 @@
                     </a>
                   </div>
                 </div>
-              </li>
+                </div>   
 
-              <li class="me-3 p-1">
-                <a
-                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
-                  href="mindfulness.html"
-                >
+
+                  <!-- 正念 -->
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio6"
+                    autocomplete="off"
+                    
+                  />
+                  
+                  <label
+                  class="nav-option-btn me-3 p-1 fs-9 fw-normal d-flex jusrify-content-center align-items-center flex-column"
+                    for="btnradio6" 
+                    data-href="mindfulness.html"
+                  >
+
+                  
+                  <!-- 符號 -->
                   <div class="mb-1">
                     <svg
                       width="32"
@@ -745,16 +838,25 @@
                       />
                     </svg>
                   </div>
-                  <div>
-                    <h2 class="mb-0 fs-8">正念</h2>
-                  </div>
-                </a>
-              </li>
-              <li class="p-1">
-                <a
-                  class="nav-active d-flex jusrify-content-center align-items-center flex-column"
-                  href="#"
-                >
+                    正念
+                    </label
+                  >
+
+
+                  <!-- 個人 -->
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio7"
+                    autocomplete="off"
+                    
+                  />
+                  <label
+                  class="nav-option-btn p-1 fs-9 fw-normal d-flex jusrify-content-center align-items-center flex-column"
+                    for="btnradio7"
+                  >
+                  <!-- 符號 -->
                   <div class="mb-1">
                     <svg
                       width="32"
@@ -776,17 +878,21 @@
                       </defs>
                     </svg>
                   </div>
-                  <div>
-                    <h2 class="mb-0 fs-8">個人</h2>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
+                    個人
+                    </label
+                  >
+
+ 
+
+
+                </div>
+        </div>
         </div>
       </section>
     </main>
 
     
+    <script src="../change_page.js"></script>
+    
   </body>
 </html>
