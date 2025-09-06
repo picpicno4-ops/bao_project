@@ -9,8 +9,25 @@
 
 // spacer
 
+.margin-top--20 {
+  margin-top: -24px;
+}
+
 .margin-top--50 {
-  margin-top: -3.125rem;
+  margin-top: -50px;
+}
+
+// h
+.h-21 {
+  height: 21px;
+}
+
+.h-54 {
+  height: 54px;
+}
+
+.h-70 {
+  height: 70px;
 }
 
 // max-w
@@ -28,8 +45,20 @@
   max-width: 8rem;
 }
 
+.max-w-165 {
+  max-width: 165px;
+}
+
 .max-w-175 {
   max-width: 175px;
+}
+
+.max-w-211 {
+  max-width: 211px;
+}
+
+.max-w-211 {
+  max-width: 211px;
 }
 
 // min-w
@@ -95,62 +124,89 @@
 
 // hover_focus
 
-.nav-active {
+// .nav-active {
+//   color: $neutral-300;
+// }
+
+// .nav-active:hover {
+//   color: $primary-500;
+// }
+
+.nav-option-btn {
   color: $neutral-300;
+  cursor: pointer; /* 手指頭 */
 }
 
-.nav-active:hover {
+.nav-option-btn:hover,
+.nav-option-btn:focus,
+.btn-check:checked + .nav-option-btn,
+.nav-option-btn.active {
   color: $primary-500;
 }
 
-.nav-active:focus {
-  color: $primary-500;
-}
+// .nav-active {
+//   color: $neutral-300;
+// }
 
-.camera-btn-active {
-  color: $neutral-500;
-  background: rgba($neutral-800, 0.5);
-}
+// .nav-active:focus {
+//   color: $primary-500;
+// }
 
-.camera-btn-active:hover {
+.camera-option-btn {
   color: $neutral-800;
-  background: white;
+  background-color: $neutral-500;
+  cursor: pointer; /* 手指頭 */
 }
 
-.camera-btn-active:focus {
+.camera-option-btn:hover,
+.camera-option-btn:focus,
+.btn-check:checked + .camera-option-btn,
+.camera-option-btn.active {
+  background-color: rgb(255, 255, 255);
   color: $neutral-800;
-  background: white;
 }
 
-.breakfast {
+.breakfast-option-btn {
   background: $tertiary-grey-yellow;
 }
 
-.breakfast:hover {
+.breakfast-option-btn:hover,
+.breakfast-option-btn:focus,
+.btn-check:checked + .breakfast-option-btn,
+.breakfast-option-btn.active {
   background: $secondary-yellow-500;
 }
 
-.lunch {
+.lunch-option-btn {
   background: $tertiary-grey-orange;
 }
 
-.lunch:hover {
+.lunch-option-btn:hover,
+.lunch-option-btn:focus,
+.btn-check:checked + .lunch-option-btn,
+.lunch-option-btn.active {
   background: $secondary-orange-500;
 }
 
-.dinner {
+.dinner-option-btn {
   background: $tertiary-grey-blue;
 }
 
-.dinner:hover {
+.dinner-option-btn:hover,
+.dinner-option-btn:focus,
+.btn-check:checked + .dinner-option-btn,
+.dinner-option-btn.active {
   background: $secondary-blue-500;
 }
 
-.dessert {
+.dessert-option-btn {
   background: $tertiary-grey-pink;
 }
 
-.dessert:hover {
+.dessert-option-btn:hover,
+.dessert-option-btn:focus,
+.btn-check:checked + .dessert-option-btn,
+.dessert-option-btn.active {
   background: $secondary-pink-500;
 }
 
@@ -248,4 +304,71 @@
 .form-control::placeholder {
   font-size: $h6-font-size;
   color: $primary-950;
+}
+
+// ---
+
+/* 公用按鈕樣式 */
+.custom-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  transition: background 0.2s;
+}
+
+/* 灰色按鈕 */
+.custom-btn.gray {
+  background: gray;
+  color: white;
+}
+.custom-btn.gray:hover,
+.custom-btn.gray:focus {
+  background: darkgray;
+}
+.custom-btn.gray.is-active {
+  background: green !important;
+}
+
+/* 紅色按鈕 */
+.custom-btn.red {
+  background: red;
+  color: white;
+}
+.custom-btn.red:hover,
+.custom-btn.red:focus {
+  background: darkred;
+}
+.custom-btn.red.is-active {
+  background: darkred !important;
+}
+
+/* 黃色按鈕 */
+.custom-btn.yellow {
+  background: gold;
+  color: black;
+}
+.custom-btn.yellow:hover,
+.custom-btn.yellow:focus {
+  background: orange;
+}
+.custom-btn.yellow.is-active {
+  background: orange !important;
+}
+
+/* ul & li 基本樣式 */
+.type-group {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.type-group li {
+  display: inline-block;
+}
+
+.opacity-40 {
+  opacity: 40%;
 }
