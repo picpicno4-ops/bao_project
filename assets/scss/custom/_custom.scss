@@ -340,3 +340,23 @@
     top: -12px;
   }
 }
+
+.kindMood{
+  width: 40px;
+  height: 40px;
+  background-color:#E7E7E7 ;
+  &:hover{
+    background-color:#97D1C2 ;
+
+    & .kindMood_icon{
+      fill: white;
+    }
+  }
+}
+
+.kindMood_icon{
+  fill:#B0B0B0 ;
+  &:hover{
+    fill: white;
+  }
+}
