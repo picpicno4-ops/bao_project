@@ -309,6 +309,10 @@
   left: 12px;
 }
 
+.left-44{
+  left: 44px;
+}
+
 .accordion{
   padding: 0 !important;
   --bs-accordion-border-color: white !important;
@@ -331,3 +335,8 @@
   }
 }
 
+.accordion-button2{
+  &::after{
+    top: -12px;
+  }
+}
