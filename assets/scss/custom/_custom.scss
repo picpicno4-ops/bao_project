@@ -32,6 +32,10 @@
   max-width: 175px;
 }
 
+.max-w-320 {
+  max-width: 20rem;
+}
+
 // min-w
 
 .min-w-165 {
@@ -261,6 +265,69 @@
   fill: #E5D2D2;
   &:hover{
     fill:#FF6666;
+  }
+  &:active{
+    fill:#FF6666;
+  }
+}
+
+.blueMood{
+  fill: #CBDFE6;
+  &:hover{
+    fill:#109CCA;
+  }
+  &:active{
+    fill:#109CCA;
+  }
+}
+
+.greenMood{
+  fill: #D3DFD3;
+  &:hover{
+    fill:#57AA98;
+  }
+  &:active{
+    fill:#57AA98;
+  }
+}
+
+.yellowMood{
+  fill: #F3ECD2;
+  &:hover{
+    fill:#F7BA00;
+  }
+  &:active{
+    fill:#F7BA00;
+  }
+}
+
+.over-flow-hidden{
+  overflow: hidden;
+}
+
+.left-12{
+  left: 12px;
+}
+
+.accordion{
+  padding: 0 !important;
+  --bs-accordion-border-color: white !important;
+}
+
+.accordion-button{
+  
+  &:focus{
+    box-shadow: none !important;
+  }
+
+  &:not(.collapsed){
+    background-color: white !important;
+  }
+
+  &::after{
+    position: relative;
+    top: -48px;
+    right: 10px;
   }
 }
 
