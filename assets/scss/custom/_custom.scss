@@ -313,6 +313,10 @@
   left: 44px;
 }
 
+.left-48{
+  left: 48px;
+}
+
 .accordion{
   padding: 0 !important;
   --bs-accordion-border-color: white !important;
@@ -359,4 +363,12 @@
   &:hover{
     fill: white;
   }
+}
+
+.hungry_level_bg{
+  background-color: white;
+  &:hover{
+    background-color:#E7EEE7 ;
+  }
+
 }
