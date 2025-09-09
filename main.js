@@ -1,4 +1,5 @@
 import "./assets/scss/all.scss";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 var bar = new ProgressBar.Circle("#circle-container", {
   color: "#ffffff", //  改成白色
