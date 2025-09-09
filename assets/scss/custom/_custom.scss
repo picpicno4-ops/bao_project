@@ -13,6 +13,11 @@
   margin-top: -3.125rem;
 }
 
+//w
+.fill-available{
+  width: -webkit-fill-available;
+}
+
 // max-w
 
 .max-w-100 {
@@ -88,6 +93,10 @@
 }
 
 // border-radius
+
+.border-radius-xxl {
+  border-radius: $border-radius-xxl !important;
+}
 
 .border-radius-20 {
   border-radius: $border-radius-20;
@@ -371,4 +380,11 @@
     background-color:#E7EEE7 ;
   }
 
+}
+
+.complete-btn{
+  background-color: $primary-300 !important; 
+  &:hover{
+    background-color: $primary-500 !important;
+  }
 }
