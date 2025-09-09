@@ -127,7 +127,15 @@
 
 .custom-height {
   height: 758px;
-  overflow: auto;
+  //overflow: auto;
+}
+
+.h-12 {
+  height: 12% !important;
+}
+
+.z-1000 {
+  z-index: 1000;
 }
 
 .target-deco {
