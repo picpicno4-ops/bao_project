@@ -17,6 +17,11 @@
   margin-top: -50px;
 }
 
+//w
+.fill-available{
+  width: -webkit-fill-available;
+}
+
 // h
 .h-21 {
   height: 21px;
@@ -53,12 +58,21 @@
   max-width: 175px;
 }
 
+
 .max-w-211 {
   max-width: 211px;
 }
 
 .max-w-211 {
   max-width: 211px;
+}
+
+.max-w-311 {
+  width: 311px;
+}
+
+.max-w-320 {
+  max-width: 20rem;
 }
 
 // min-w
@@ -120,6 +134,18 @@
 
 .border-radius-12 {
   border-radius: $border-radius-12;
+}
+
+.border-radius-lg {
+  border-radius: $border-radius-lg !important;
+}
+
+.border-radius-xl {
+  border-radius: $border-radius-xl !important;
+}
+
+.border-radius-xxl {
+  border-radius: $border-radius-xxl !important;
 }
 
 // hover_focus
@@ -371,4 +397,166 @@
 
 .opacity-40 {
   opacity: 40%;
+}
+
+//transform相關
+.transform-rotate-90{
+  transform:rotate(90deg);
+}
+
+
+//心情感受icon
+.redMood{
+  fill: #E5D2D2;
+  &:hover{
+    fill:#FF6666;
+  }
+  &:active{
+    fill:#FF6666;
+  }
+}
+
+.blueMood{
+  fill: #CBDFE6;
+  &:hover{
+    fill:#109CCA;
+  }
+  &:active{
+    fill:#109CCA;
+  }
+}
+
+.greenMood{
+  fill: #D3DFD3;
+  &:hover{
+    fill:#57AA98;
+  }
+  &:active{
+    fill:#57AA98;
+  }
+}
+
+.yellowMood{
+  fill: #F3ECD2;
+  &:hover{
+    fill:#F7BA00;
+  }
+  &:active{
+    fill:#F7BA00;
+  }
+}
+
+.over-flow-hidden{
+  overflow: hidden;
+}
+
+.left-12{
+  left: 12px;
+}
+
+.left-44{
+  left: 44px;
+}
+
+.left-48{
+  left: 48px;
+}
+
+// BS5風琴樣式調整
+
+.accordion{
+  padding: 0 !important;
+  --bs-accordion-border-color: white !important;
+}
+
+.accordion-button{
+  
+  &:focus{
+    box-shadow: none !important;
+  }
+
+  &:not(.collapsed){
+    background-color: white !important;
+  }
+
+  &::after{
+    position: relative;
+    top: -48px;
+    right: 10px;
+  }
+}
+
+.accordion-button2{
+  &::after{
+    top: -8px;
+  }
+}
+
+
+// 為什麼有這樣的心情icon樣式
+.kindMood{
+  width: 40px;
+  height: 40px;
+  background-color:#E7E7E7 ;
+  &:hover{
+    background-color:#97D1C2 ;
+
+    & .kindMood_icon{
+      fill: white;
+    }
+  }
+}
+
+.kindMood_icon{
+  fill:#B0B0B0 ;
+  &:hover{
+    fill: white;
+  }
+}
+
+.hungry_level_bg{
+  background-color: white;
+  &:hover{
+    background-color:#E7EEE7 ;
+  }
+
+}
+
+// 完成按鈕
+
+.complete-btn{
+  background-color: $primary-300 !important; 
+  &:hover{
+    background-color: $primary-500 !important;
+  }
+}
+
+
+// analyze頁面
+
+.bg-surface-50{
+  background-color:#FFF8F2 ;
+}
+
+.moodFood{
+  svg{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.moodFood-red{
+  background-color:#FF6666 ;
+}
+
+.moodFood-blue{
+  background-color: #109CCA;
+}
+
+.moodFood-green{
+  background-color: #57AA98;
+}
+
+.moodFood-yellow{
+  background-color: #F7BA00;
 }
