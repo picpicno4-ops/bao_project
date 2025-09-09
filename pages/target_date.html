@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Air Datepicker -->
     <link
       rel="stylesheet"
@@ -26,73 +30,90 @@
         <div class="h-54"></div>
 
         <form action="/">
-          <main class="d-flex flex-column custom-height">
-            <div class="py-3 px-4 d-flex align-items-center mt-3 z-0">
-              <a href="target_info.html" class="btn p-2 border-0"
-                ><img
-                  src="/assets/images/left_line.svg"
-                  alt="回上一頁"
-                  class="d-block"
-              /></a>
-              <h1
-                class="fs-6 fw-bold lh-1 mb-0 flex-grow-1 text-center text-neutral-800"
-              >
-                規律飲食
-              </h1>
-            </div>
-
-            <!-- 選擇日期 -->
-            <p class="text-primary-950 lh-38 ms-10 mb-4">就今天開始吧～</p>
-
-            <div class="position-relative mb-4">
-              <div class="target-deco">
-                <img src="/assets/images/eattingrice.png" alt="eattingrice" />
-              </div>
-              <div class="bg-white p-3 border-radius-12 mx-4">
-                <p class="text-primary-800 fs-8 fw-medium lh-base mb-4">
-                  輸入日期
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p id="selectedDateText" class="text-primary-950 fs-32 mb-0">
-                    7月17日(一)
-                  </p>
-                  <button
-                    type="button"
-                    class="btn p-0 border-0 text-primary-600"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#calendarCollapse"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="calendarCollapse"
-                  >
-                    <img
-                      src="/assets/images/calendar_line.svg"
-                      alt="calendar_line"
-                    />
-                  </button>
-                </div>
-
-                <div class="collapse" id="calendarCollapse">
-                  <div class="pt-4 pb-3 border-top border-primary mt-4">
-                    <div id="airDatepicker"></div>
+          <div class="page-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <main class="d-flex flex-column custom-height">
+                  <div class="py-3 px-4 d-flex align-items-center mt-3 z-0">
+                    <a href="#" class="btn p-2 border-0"
+                      ><img
+                        src="/assets/images/left_line.svg"
+                        alt="回上一頁"
+                        class="d-block"
+                    /></a>
+                    <h1
+                      class="fs-6 fw-bold lh-1 mb-0 flex-grow-1 text-center text-neutral-800"
+                    >
+                      規律飲食
+                    </h1>
                   </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- 下一步按鈕 -->
-            <div class="mx-3 mt-auto mb-28">
-              <a
-                href="target_time.html"
-                class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
-                >下一步</a
-              >
+                  <!-- 選擇日期 -->
+                  <p class="text-primary-950 lh-38 ms-10 mb-4">
+                    就今天開始吧～
+                  </p>
+
+                  <div class="position-relative mb-4">
+                    <div class="target-deco">
+                      <img
+                        src="/assets/images/eattingrice.png"
+                        alt="eattingrice"
+                      />
+                    </div>
+                    <div class="bg-white p-3 border-radius-12 mx-4">
+                      <p class="text-primary-800 fs-8 fw-medium lh-base mb-4">
+                        輸入日期
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p
+                          id="selectedDateText"
+                          class="text-primary-950 fs-32 mb-0"
+                        >
+                          7月17日(一)
+                        </p>
+                        <button
+                          type="button"
+                          class="btn p-0 border-0 text-primary-600"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#calendarCollapse"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="calendarCollapse"
+                        >
+                          <img
+                            src="/assets/images/calendar_line.svg"
+                            alt="calendar_line"
+                          />
+                        </button>
+                      </div>
+
+                      <div class="collapse" id="calendarCollapse">
+                        <div class="pt-4 pb-3 border-top border-primary mt-4">
+                          <div id="airDatepicker"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 下一步按鈕 -->
+                  <div class="mx-3 mt-auto mb-28">
+                    <a
+                      href="target_time.html"
+                      class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
+                      >下一步</a
+                    >
+                  </div>
+                </main>
+              </div>
+              <div class="swiper-slide h-12"></div>
             </div>
-          </main>
+          </div>
         </form>
         <!-- 導覽列區塊 -->
         <!-- nav按鈕選項2 -->
-        <div class="position-absolute bottom-0 start-0 end-0">
+        <div class="position-absolute bottom-0 start-0 end-0 z-1000">
           <div
             class="btn-group pt-1 pb-15 px-11 bg-neutral-50 border-radius-20 shadow rounded-bottom-0 list-unstyled d-flex justify-content-center"
             role="group"
@@ -109,6 +130,7 @@
             <label
               class="nav-option-btn me-3 p-1 fs-9 fw-normal d-flex jusrify-content-center align-items-center flex-column"
               for="btnradio4"
+              data-href="record_status.html"
             >
               <!-- 符號 -->
 
@@ -411,8 +433,17 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.js"></script>
     <script>
+      // 頁面滾動設定
+      const pageSwiper = new Swiper(".page-swiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        mousewheel: true,
+        autoHeight: true,
+      });
+
       // Air Datepicker 月曆
       // 語系資料
       const zh = {
