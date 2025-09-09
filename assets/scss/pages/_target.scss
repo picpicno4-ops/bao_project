@@ -126,7 +126,16 @@
 }
 
 .custom-height {
-  height: calc(100vh - 95px);
+  height: 758px;
+  //overflow: auto;
+}
+
+.h-12 {
+  height: 12% !important;
+}
+
+.z-1000 {
+  z-index: 1000;
 }
 
 .target-deco {

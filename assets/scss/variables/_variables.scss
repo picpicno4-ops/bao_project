@@ -69,6 +69,7 @@ $primary-700: #295c53;
 $primary-800: #244b44;
 $primary-900: #223f3a;
 $primary-950: #0f2422;
+$secondary-yellow-400: #ffd34eff;
 $secondary-yellow-500: #f6c502;
 $secondary-pink-500: #fd3636ff;
 $secondary-orange-500: #fd7a07;
@@ -544,6 +545,8 @@ $spacers: (
   // 54px
   27: $spacer * 4.375,
   // 70px
+  28: $spacer * 8.1875,
+  // 131px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
