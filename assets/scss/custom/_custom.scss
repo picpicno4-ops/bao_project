@@ -7,6 +7,13 @@
   overflow: hidden;
 }
 
+.cell-phone-y {
+  width: 375px;
+  height: 812px;
+  position: relative;
+  overflow-y: scroll;
+}
+
 // spacer
 
 .margin-top--20 {
@@ -117,6 +124,9 @@
 }
 
 // vh
+.vh-50 {
+  height: 50vh;
+}
 
 .vh-75 {
   height: 75vh;
