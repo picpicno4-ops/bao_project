@@ -13,6 +13,11 @@
   margin-top: -3.125rem;
 }
 
+//w
+.fill-available{
+  width: -webkit-fill-available;
+}
+
 // max-w
 
 .max-w-100 {
@@ -30,6 +35,10 @@
 
 .max-w-175 {
   max-width: 175px;
+}
+
+.max-w-320 {
+  max-width: 20rem;
 }
 
 // min-w
@@ -84,6 +93,10 @@
 }
 
 // border-radius
+
+.border-radius-xxl {
+  border-radius: $border-radius-xxl !important;
+}
 
 .border-radius-20 {
   border-radius: $border-radius-20;
@@ -248,4 +261,130 @@
 .form-control::placeholder {
   font-size: $h6-font-size;
   color: $primary-950;
+}
+
+
+//transform相關
+.transform-rotate-90{
+  transform:rotate(90deg);
+}
+
+//心情感受icon
+.redMood{
+  fill: #E5D2D2;
+  &:hover{
+    fill:#FF6666;
+  }
+  &:active{
+    fill:#FF6666;
+  }
+}
+
+.blueMood{
+  fill: #CBDFE6;
+  &:hover{
+    fill:#109CCA;
+  }
+  &:active{
+    fill:#109CCA;
+  }
+}
+
+.greenMood{
+  fill: #D3DFD3;
+  &:hover{
+    fill:#57AA98;
+  }
+  &:active{
+    fill:#57AA98;
+  }
+}
+
+.yellowMood{
+  fill: #F3ECD2;
+  &:hover{
+    fill:#F7BA00;
+  }
+  &:active{
+    fill:#F7BA00;
+  }
+}
+
+.over-flow-hidden{
+  overflow: hidden;
+}
+
+.left-12{
+  left: 12px;
+}
+
+.left-44{
+  left: 44px;
+}
+
+.left-48{
+  left: 48px;
+}
+
+.accordion{
+  padding: 0 !important;
+  --bs-accordion-border-color: white !important;
+}
+
+.accordion-button{
+  
+  &:focus{
+    box-shadow: none !important;
+  }
+
+  &:not(.collapsed){
+    background-color: white !important;
+  }
+
+  &::after{
+    position: relative;
+    top: -48px;
+    right: 10px;
+  }
+}
+
+.accordion-button2{
+  &::after{
+    top: -8px;
+  }
+}
+
+.kindMood{
+  width: 40px;
+  height: 40px;
+  background-color:#E7E7E7 ;
+  &:hover{
+    background-color:#97D1C2 ;
+
+    & .kindMood_icon{
+      fill: white;
+    }
+  }
+}
+
+.kindMood_icon{
+  fill:#B0B0B0 ;
+  &:hover{
+    fill: white;
+  }
+}
+
+.hungry_level_bg{
+  background-color: white;
+  &:hover{
+    background-color:#E7EEE7 ;
+  }
+
+}
+
+.complete-btn{
+  background-color: $primary-300 !important; 
+  &:hover{
+    background-color: $primary-500 !important;
+  }
 }

@@ -1,4 +1,6 @@
 import "./assets/scss/all.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 var bar = new ProgressBar.Circle("#circle-container", {
     color: "#ffffff", // 👈 改成白色
@@ -34,3 +36,4 @@ var bar = new ProgressBar.Circle("#circle-container", {
 bar.set(0);
 // 動畫跑滿
 bar.animate(1.0, { duration: 4000 });
+
