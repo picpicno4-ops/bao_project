@@ -37,7 +37,6 @@ bar.set(0);
 // 動畫跑滿
 bar.animate(1.0, { duration: 4000 });
 
-<<<<<<< HEAD
 // 切換按鈕換按鈕
 
 // const buttons = document.querySelectorAll(".tab-btn");
@@ -48,5 +47,3 @@ bar.animate(1.0, { duration: 4000 });
 //     btn.classList.add("active-btn");
 //   });
 // });
-=======
->>>>>>> 26498d52f331cfbb9ba1331259bae4120a81814e
