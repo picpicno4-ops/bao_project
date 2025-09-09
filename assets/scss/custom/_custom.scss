@@ -42,6 +42,11 @@
   height: 70px;
 }
 
+//w
+.fill-available{
+  width: -webkit-fill-available;
+}
+
 // max-w
 
 .max-w-100 {
@@ -137,6 +142,10 @@
 }
 
 // border-radius
+
+.border-radius-xxl {
+  border-radius: $border-radius-xxl !important;
+}
 
 .border-radius-20 {
   border-radius: $border-radius-20;
@@ -413,7 +422,6 @@
 .transform-rotate-90{
   transform:rotate(90deg);
 }
-
 
 //心情感受icon
 .redMood{
