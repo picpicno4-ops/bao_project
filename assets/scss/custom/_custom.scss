@@ -432,6 +432,9 @@
   &:active{
     fill:#FF6666;
   }
+  &:focus{
+    fill:#FF6666;
+  }
 }
 
 .blueMood{
@@ -440,6 +443,9 @@
     fill:#109CCA;
   }
   &:active{
+    fill:#109CCA;
+  }
+  &:focus{
     fill:#109CCA;
   }
 }
@@ -452,6 +458,9 @@
   &:active{
     fill:#57AA98;
   }
+  &:focus{
+    fill:#57AA98;
+  }
 }
 
 .yellowMood{
@@ -460,6 +469,9 @@
     fill:#F7BA00;
   }
   &:active{
+    fill:#F7BA00;
+  }
+  &:focus{
     fill:#F7BA00;
   }
 }
@@ -523,6 +535,23 @@
       fill: white;
     }
   }
+
+  &:active{
+    background-color:#97D1C2 ;
+
+    & .kindMood_icon{
+      fill: white;
+    }
+  }
+  
+  &:focus{
+    background-color:#97D1C2 ;
+
+    & .kindMood_icon{
+      fill: white;
+    }
+  }
+  
 }
 
 .kindMood_icon{
