@@ -434,6 +434,9 @@
   &:active{
     fill:#FF6666;
   }
+  &:focus{
+    fill:#FF6666;
+  }
 }
 
 .blueMood{
@@ -442,6 +445,9 @@
     fill:#109CCA;
   }
   &:active{
+    fill:#109CCA;
+  }
+  &:focus{
     fill:#109CCA;
   }
 }
@@ -454,6 +460,9 @@
   &:active{
     fill:#57AA98;
   }
+  &:focus{
+    fill:#57AA98;
+  }
 }
 
 .yellowMood{
@@ -462,6 +471,9 @@
     fill:#F7BA00;
   }
   &:active{
+    fill:#F7BA00;
+  }
+  &:focus{
     fill:#F7BA00;
   }
 }
@@ -525,6 +537,23 @@
       fill: white;
     }
   }
+
+  &:active{
+    background-color:#97D1C2 ;
+
+    & .kindMood_icon{
+      fill: white;
+    }
+  }
+  
+  &:focus{
+    background-color:#97D1C2 ;
+
+    & .kindMood_icon{
+      fill: white;
+    }
+  }
+  
 }
 
 .kindMood_icon{
@@ -552,37 +581,3 @@
 }
 
 
-// analyze頁面
-
-.bg-surface-50{
-  background-color:#FFF8F2 ;
-}
-
-.moodFood{
-  svg{
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.moodFood-red{
-  background-color:#FF6666 ;
-}
-
-.moodFood-blue{
-  background-color: #109CCA;
-}
-
-.moodFood-green{
-  background-color: #57AA98;
-}
-
-.moodFood-yellow{
-  background-color: #F7BA00;
-}
-
-.motivationMood{
-  width: 40px;
-  height: 40px;
-  background-color:#97D1C2 ;
-}
