@@ -64,6 +64,10 @@
     margin-bottom: 12px;
 }
 
+.mb-88{
+    margin-bottom: 88px;
+}
+
 .top-56{
     top: 56px;
 }
@@ -195,18 +199,287 @@
     }
 }
 
+// 週日~週六懸浮提示
+
+.daylineLayer1{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
 .daylineLayer1::before{
-    content:'週三，下午三次' ;
+    display: none;
+    content:'週日，二次' ;
     width: max-content;
     background-color: white;
     padding: 8px 16px;
     border-radius: 12px;
     position: absolute;
     top: -25%;
-    left: -64px;
+    left: -50px;
     z-index: 1;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
+
+.daylineLayer1::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer2{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer2::before{
+    display: none;
+    content:'週一，晚上一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer2::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer3{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer3::before{
+    display: none;
+    content:'週二，二次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer3::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer4{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer4::before{
+    display: none;
+    content:'週三，三次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer4::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer5{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer5::before{
+    display: none;
+    content:'週四，中午一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer5::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer6{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer6::before{
+    display: none;
+    content:'週五，一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer6::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer7{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer7::before{
+    display: none;
+    content:'週六，一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -72px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer7::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
 
 .weekDay{
     width: 100%;
