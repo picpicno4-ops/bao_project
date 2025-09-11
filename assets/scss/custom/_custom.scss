@@ -12,6 +12,8 @@
   height: 812px;
   position: relative;
   overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE、舊 Edge */
 }
 
 // spacer
