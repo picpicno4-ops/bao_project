@@ -8,6 +8,23 @@
   background-color:#FFF8F2 ;
 }
 
+// tab客製
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    color:#454545 ;
+    background-color:white;
+    font-weight: bold;
+}
+
+.nav-item-w{
+    width: 50%;
+
+    .nav-link{
+        width: 100%;
+    }
+}
+
+
+
 .moodFood{
   svg{
     width: 30px;
@@ -60,16 +77,21 @@
     left: -2px;
 }
 
+
 .mb-12{
     margin-bottom: 12px;
 }
 
-.mb-88{
-    margin-bottom: 88px;
+.mb-120{
+    margin-bottom: 120px;
 }
 
 .top-56{
     top: 56px;
+}
+
+.bottom-24{
+    bottom: 24px;
 }
 
 .bottom-5{
