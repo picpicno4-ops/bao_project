@@ -64,6 +64,18 @@
     margin-bottom: 12px;
 }
 
+.mb-88{
+    margin-bottom: 88px;
+}
+
+.top-56{
+    top: 56px;
+}
+
+.bottom-5{
+    bottom: 5%;
+}
+
 .bottom-14{
     bottom: 14%;
 }
@@ -90,4 +102,421 @@
 
 .bottom-77{
     bottom: 77%;
+}
+
+
+// 最容易情緒飲食的時刻
+.pt-56{
+    padding-top: 56px;
+}
+
+.pt-80{
+    padding-top: 80px;
+}
+
+.pt-40{
+    padding-bottom: 40px;
+}
+
+.timePeriod{
+    width: 10%;
+
+    p{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+}
+
+.timeLine{
+    width: 85%;
+}
+
+.dottedArea{
+    width: 100%;
+
+    .dottedLayer{
+        width: 100%;
+        height: 44px;
+        box-sizing: border-box;
+    }
+
+}
+
+.dottedTop {
+  position: relative;
+}
+
+.dottedTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(228, 234, 240, 0.6) 0 6px,         /* 漸層起點 */
+    transparent 6px 12px
+  );
+}
+
+.dottedBottom {
+  position: relative;
+}
+
+.dottedBottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(228, 234, 240, 0.2) 0 6px,         /* 漸層起點 */
+    transparent 6px 12px
+  );
+}
+
+
+.daylineArea{
+    width: 100%;
+
+    .daylineLayer{
+        width: 12px;
+        height: 220px;
+        background-color: rgba(184, 210, 222, 0.3);
+        border: 1px solid #A2C4D4;
+        border-radius: 50px;
+        box-sizing: border-box;
+
+        .daylineDot{
+            width: 100%;
+            height: 20px;
+            background-color: #57AA98;
+            border-radius: 30px;
+        }
+    }
+}
+
+// 週日~週六懸浮提示
+
+.daylineLayer1{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer1::before{
+    display: none;
+    content:'週日，二次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer1::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer2{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer2::before{
+    display: none;
+    content:'週一，晚上一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer2::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer3{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer3::before{
+    display: none;
+    content:'週二，二次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer3::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer4{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer4::before{
+    display: none;
+    content:'週三，三次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer4::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer5{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer5::before{
+    display: none;
+    content:'週四，中午一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer5::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer6{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer6::before{
+    display: none;
+    content:'週五，一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -50px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer6::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.daylineLayer7{
+    &:hover{
+        &::before{
+            display: block;
+        }
+        &::after{
+            display: block;
+        }
+    }
+}
+
+.daylineLayer7::before{
+    display: none;
+    content:'週六，一次' ;
+    width: max-content;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    position: absolute;
+    top: -25%;
+    left: -72px;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.daylineLayer7::after{
+    content:" " ;
+    z-index: 2;
+    display: none;
+    width: 20px;
+    height: 15px;
+    background-image: url('https://raw.githubusercontent.com/picpicno4-ops/bao_project/adcbe906e34816121de0a09c9b0a51b84b9899c8/assets/images/Polygon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+
+// -----------------------------
+
+.weekDay{
+    width: 100%;
+
+    p{
+        margin-top: 20px;
+    }
+}
+
+.text-neutral-400{
+    color: $neutral-400;
+}
+
+.hungrylineArea{
+    width: 100%;
+    height: 7px;
+    border-radius: 30px;
+
+    .hungryLine{
+        width: 11%;
+        height: 100%;
+        border-radius: 30px;
+
+        .hungryDot{
+            width: 9px;
+            height: 9px;
+            border-radius: 20px;
+            background-color: #F6F6F6;
+            border: 2px solid $primary-500;
+        }
+    }
+}
+
+.hungryDetail{
+    width: 100%;
+
+    p{
+        font-size: 12px;
+    }
 }
