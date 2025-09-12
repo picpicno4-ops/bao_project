@@ -365,10 +365,10 @@ $theme-colors: (
   "primary-950": $primary-950,
   "neutral-50": $neutral-50,
   "neutral-100": $neutral-100,
+  "neutral-300": $neutral-300,
   "neutral-500": $neutral-500,
   "neutral-600": $neutral-600,
   "neutral-700": $neutral-700,
-  "neutral-300": $neutral-300,
   "neutral-800": $neutral-800,
   "tertiary-grey-pink": $tertiary-grey-pink,
   "tertiary-grey-blue": $tertiary-grey-blue,
@@ -547,6 +547,8 @@ $spacers: (
   // 70px
   28: $spacer * 8.1875,
   // 131px
+  29: $spacer * 0.1875,
+  // 3px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
