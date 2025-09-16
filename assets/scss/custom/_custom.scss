@@ -93,6 +93,10 @@
   max-width: 20rem;
 }
 
+.w-375{
+  width: 375px;
+}
+
 // min-w
 
 .min-w-165 {
@@ -490,6 +494,7 @@
   }
 }
 
+
 .over-flow-hidden {
   overflow: hidden;
 }
@@ -575,6 +580,9 @@
 .hungry_level_bg {
   background-color: white;
   &:hover {
+    background-color: #e7eee7;
+  }
+  &:active {
     background-color: #e7eee7;
   }
 }
