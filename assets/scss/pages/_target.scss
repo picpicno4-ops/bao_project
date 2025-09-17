@@ -120,18 +120,106 @@
   padding: 0 16px 16px;
 }
 
-.form-check-input:checked {
-  background-color: $primary-500;
-  border-color: $primary-500;
+.btn-primary-50 {
+  --bs-btn-active-bg: var(--bs-primary-100);
+  --bs-btn-hover-color: var(--bs-primary-10);
+  --bs-btn-focus-shadow-rgb: none;
+}
+
+// 臨時關閉 active/hover 變色
+button.no-press-active,
+button.no-press-active:active,
+button.no-press-active:hover {
+  --bs-btn-active-bg: var(--bs-primary-50);
+}
+
+// form-switch 樣式 (可抽成一組可調變數)
+.form-switch .form-check-input {
+  --switch-w: 2rem; //寬
+  --switch-h: 1rem; //高
+  --switch-pad: 2px; //圓點與邊緣距
+  --track-off: var(--bs-neutral-500); // 未勾選軌道色 $neutral-500
+  --track-on: var(--bs-primary-500); // 勾選軌道色
+  --thumb: #fff; /* 圓點色 */
+  --shadow: none;
+
+  width: var(--switch-w);
+  height: var(--switch-h);
+  border: 0;
+  border-radius: 999px;
+  background-color: var(--track-off);
+  background-image: none; // 不用 Bootstrap 內建的 SVG 圓點
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: none;
+}
+
+// 圓點
+.form-switch .form-check-input::before {
+  content: "";
+  position: absolute;
+  inset: var(--switch-pad) auto auto var(--switch-pad);
+  width: calc(var(--switch-h) - var(--switch-pad) * 2);
+  height: calc(var(--switch-h) - var(--switch-pad) * 2);
+  border-radius: 50%;
+  background: var(--thumb);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease-in-out;
+}
+
+// 勾選狀態：改軌道色 + 圓點右移
+.form-switch .form-check-input:checked {
+  background-color: var(--track-on);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translateX(calc(var(--switch-w) - var(--switch-h)));
+}
+
+// 焦點可及性
+.form-switch .form-check-input:focus {
+  box-shadow: none;
+}
+
+.form-switch .form-check-input:active {
+  filter: none;
+}
+
+// 停用狀態
+.form-switch .form-check-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+// 調整：讓圓點支援 box-shadow 動畫
+.form-switch .form-check-input::before {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; // 加上 box-shadow 過場
+}
+
+// 參數
+$switch-ring-size: 6px; // 光暈半徑
+$switch-ring-color: rgba($neutral-950, 0.08); // 未勾選 press 色
+$switch-ring-color-checked: rgba($primary-900, 0.08); // 已勾選 press 色（稍濃）
+
+// 直接按在「input」上的 press ring
+.form-switch .form-check-input:active::before {
+  box-shadow: 0 0 0 $switch-ring-size $switch-ring-color;
+}
+.form-switch .form-check-input:checked:active::before {
+  box-shadow: 0 0 0 $switch-ring-size $switch-ring-color-checked;
 }
 
 .custom-height {
   height: 758px;
-  //overflow: auto;
 }
 
 .h-12 {
   height: 12% !important;
+}
+
+.w-24 {
+  width: 24px;
 }
 
 .z-1000 {
@@ -156,5 +244,124 @@
 }
 
 .bg-confirm {
-  background: linear-gradient(180deg, $surface-bg 25%, $primary-400 60%);
+  background: linear-gradient(180deg, $surface-bg 30%, $primary-400 55%);
+}
+
+// Offcanvas
+// 只針對 inset 版本覆蓋 Bootstrap 預設
+.offcanvas.offcanvas-inset {
+  position: absolute; // 相對 .cell-phone 定位
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  height: 395px;
+
+  // 用 transform 做進出場
+  transform: translateY(100%);
+  visibility: hidden;
+  will-change: transform;
+  transition: transform 0.3s ease;
+  z-index: 2000; // 蓋過 .cell-phone 內其他東西
+}
+
+.offcanvas.offcanvas-inset.show {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+// 關閉動畫：Bootstrap 會加 .hiding
+// 保持可見，同時把 transform 推回下方，才看得到往下滑出
+.offcanvas.offcanvas-inset.hiding {
+  transform: translateY(100%);
+  visibility: visible; // 一移除 .show 會瞬間消失
+}
+
+// 只覆蓋 .cell-phone 的自製遮罩
+.sheet-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(#000000, 0.2);
+  z-index: 1500; // 低於 offcanvas, 高於內容
+  opacity: 0;
+  pointer-events: none; // 預設不擋點擊
+  transition: opacity 0.2s ease;
+}
+.sheet-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto; // 打開時擋到底層點擊
+}
+
+.grab-bar {
+  width: 36px;
+  height: 5px;
+  background-color: #cfcfcf;
+  border-radius: 100px;
+  margin: 5px auto 6px;
+}
+
+.select-wrapper {
+  padding: 27px 87px 26px 95px;
+}
+
+// 整個轉盤
+.picker {
+  position: relative;
+  display: flex;
+}
+
+// 每一欄的可視高度
+.picker .swiper {
+  height: 159px;
+  overflow: hidden;
+  position: relative;
+}
+
+// 上下淡化
+.picker .swiper::before,
+.picker .swiper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 68px;
+  z-index: 2;
+  pointer-events: none;
+}
+.picker .swiper::before {
+  top: 0;
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0));
+}
+.picker .swiper::after {
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+}
+
+// 中央選取窗
+.picker-window {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 31px;
+  border-radius: 8px;
+  background: rgba($color: $neutral-400, $alpha: 0.08);
+  z-index: 1;
+}
+
+// 單格樣式
+.picker .swiper-slide {
+  font-size: 22px;
+  color: #aeaeae; // 灰
+}
+
+// 中央高亮
+.picker .swiper-slide-active {
+  color: $primary-950;
 }
