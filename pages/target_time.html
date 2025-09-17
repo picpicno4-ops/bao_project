@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="../assets/scss/all.scss" />
     <title>設定目標時間</title>
@@ -21,7 +25,7 @@
 
         <form action="/">
           <main class="d-flex flex-column custom-height">
-            <div class="py-3 px-4 d-flex align-items-center mt-3">
+            <div class="py-2 ps-3 pe-30 d-flex align-items-center mt-3">
               <a href="target_date.html" class="btn p-2 border-0"
                 ><img
                   src="/assets/images/left_line.svg"
@@ -38,7 +42,10 @@
             <p class="text-black lh-38 ms-10 mb-4">健康飲食從規律開始吧!</p>
             <div class="position-relative mb-4">
               <div class="target-deco">
-                <img src="/assets/images/eattingrice.png" alt="eattingrice" />
+                <img
+                  src="/assets/images/eattingrice mirror.svg"
+                  alt="eattingrice"
+                />
               </div>
               <div class="bg-white p-3 border-radius-12 mx-4">
                 <div>
@@ -49,7 +56,11 @@
                     <!-- 早餐提醒 -->
                     <button
                       type="button"
-                      class="btn bg-primary-50 py-3 px-18 border-0 border-radius-12 mb-2 d-flex justify-content-between align-items-center gap-2 w-100"
+                      class="btn btn-primary-50 py-3 px-18 border-0 border-radius-12 mb-2 d-flex justify-content-between align-items-center gap-2 w-100"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#reminderTimeOffcanvas"
+                      aria-controls="reminderTimeOffcanvas"
+                      data-meal="早餐"
                     >
                       <div class="text-start">
                         <p class="fs-8 text-primary-800 mb-1">早餐</p>
@@ -75,7 +86,11 @@
                     <!-- 午餐提醒 -->
                     <button
                       type="button"
-                      class="btn bg-primary-50 py-3 px-18 border-0 border-radius-12 mb-2 d-flex justify-content-between align-items-center gap-2 w-100"
+                      class="btn btn-primary-50 py-3 px-18 border-0 border-radius-12 mb-2 d-flex justify-content-between align-items-center gap-2 w-100"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#reminderTimeOffcanvas"
+                      aria-controls="reminderTimeOffcanvas"
+                      data-meal="午餐"
                     >
                       <div class="text-start">
                         <p class="fs-8 text-primary-800 mb-1">午餐</p>
@@ -101,7 +116,11 @@
                     <!-- 晚餐提醒 -->
                     <button
                       type="button"
-                      class="btn bg-primary-50 py-3 px-18 border-0 border-radius-12 d-flex justify-content-between align-items-center gap-2 w-100"
+                      class="btn btn-primary-50 py-3 px-18 border-0 border-radius-12 d-flex justify-content-between align-items-center gap-2 w-100"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#reminderTimeOffcanvas"
+                      aria-controls="reminderTimeOffcanvas"
+                      data-meal="晚餐"
                     >
                       <div class="text-start">
                         <p class="fs-8 text-primary-800 mb-1">晚餐</p>
@@ -141,10 +160,226 @@
 
         <!-- 導覽列區塊 -->
         <%- include('./layout/footer_personal'); -%>
+
+        <!-- reminderTimeOffcanvas -->
+        <div
+          class="offcanvas offcanvas-bottom offcanvas-inset"
+          tabindex="-1"
+          id="reminderTimeOffcanvas"
+          aria-labelledby="reminderTimeOffcanvasLabel"
+          data-bs-backdrop="false"
+          data-bs-scroll="true"
+        >
+          <div class="offcanvas-header p-0 mb-2 flex-column">
+            <div class="grab-bar"></div>
+            <div
+              class="d-flex justify-content-start align-items-center py-2 ps-3 pe-31 w-100"
+            >
+              <button
+                type="button"
+                class="btn border-0 p-12"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <img
+                  src="/assets/images/item=close_line.svg"
+                  alt="close_line"
+                  class="w-24"
+                />
+              </button>
+              <div class="w-100">
+                <h4
+                  id="reminderTimeOffcanvasLabel"
+                  class="fs-5 text-center text-primary-800 mb-2"
+                >
+                  晚餐
+                </h4>
+                <p class="text-center text-neutral-500 mb-0">
+                  設定每日提醒時間
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="offcanvas-body p-0">
+            <div class="mb-3 px-3">
+              <!-- 選擇時間 -->
+              <div class="position-relative">
+                <div class="picker-window"></div>
+                <div class="select-wrapper">
+                  <div class="picker">
+                    <!-- 上午/下午 -->
+                    <div class="swiper picker-swiper-ampm me-32">
+                      <div class="swiper-wrapper"></div>
+                    </div>
+
+                    <!-- 小時 -->
+                    <div class="swiper picker-swiper-hour me-33">
+                      <div class="swiper-wrapper"></div>
+                    </div>
+
+                    <!-- 分鐘 -->
+                    <div class="swiper picker-swiper-minute">
+                      <div class="swiper-wrapper"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
+                data-bs-dismiss="offcanvas"
+              >
+                設置
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 只覆蓋 .cell-phone 的半透明遮罩 -->
+        <div class="sheet-backdrop" hidden></div>
       </section>
     </main>
 
     <script type="module" src="../main.js"></script>
     <script src="../change_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // offcanvas 遮罩
+      const sheet = document.getElementById("reminderTimeOffcanvas");
+      const backdrop = document.querySelector(".sheet-backdrop");
+
+      sheet.addEventListener("show.bs.offcanvas", () => {
+        backdrop?.classList.add("is-open");
+        backdrop?.removeAttribute("hidden");
+      });
+      sheet.addEventListener("hidden.bs.offcanvas", () => {
+        backdrop?.classList.remove("is-open");
+        // 動畫結束再隱藏，避免 tab 停在遮罩上
+        setTimeout(() => backdrop?.setAttribute("hidden", ""), 200);
+      });
+
+      // 在捕獲階段先攔截所有「會觸發 offcanvas」的 click
+      document.addEventListener(
+        "click",
+        function (e) {
+          // 是否點到了 offcanvas 觸發器（按鈕或其他元素）
+          const trigger = e.target.closest('[data-bs-toggle="offcanvas"]');
+          if (!trigger) return;
+
+          // 是否在 trigger 裡點到了 form-switch（或它的 input/label）
+          const hitSwitch = e.target.closest(
+            ".form-switch, .form-check-input, .form-check-label"
+          );
+          if (hitSwitch && trigger.contains(hitSwitch)) {
+            // 阻止 Bootstrap Data API 接手
+            e.stopImmediatePropagation();
+          }
+        },
+        true
+      ); // ← 用捕獲階段，保證早於 Bootstrap 的委派處理
+
+      // 按到 switch 時，暫時讓外層按鈕不吃 active 樣式
+      const TRIGGER_SEL = 'button[data-bs-toggle="offcanvas"]';
+      const SWITCH_SEL = ".form-switch, .form-check-input, .form-check-label";
+
+      document.addEventListener(
+        "pointerdown",
+        (e) => {
+          const btn = e.target.closest(TRIGGER_SEL);
+          if (btn && e.target.closest(SWITCH_SEL))
+            btn.classList.add("no-press-active");
+        },
+        true
+      );
+
+      [
+        "pointerup",
+        "pointercancel",
+        "mouseleave",
+        "touchend",
+        "mouseup",
+      ].forEach((evt) => {
+        document.addEventListener(
+          evt,
+          () => {
+            document
+              .querySelectorAll(".no-press-active")
+              .forEach((b) => b.classList.remove("no-press-active"));
+          },
+          true
+        );
+      });
+
+      // 開啟 offcanvas 時，依觸發來源設定標題
+      sheet.addEventListener("show.bs.offcanvas", (e) => {
+        const trigger = e.relatedTarget; // 觸發 offcanvas 的按鈕
+        if (!trigger) return;
+
+        // 優先用 data-meal，其次用卡片左側的小標 <p> 的文字
+        const meal =
+          trigger.getAttribute("data-meal") ||
+          trigger.querySelector(".text-start > p")?.textContent?.trim() ||
+          "提醒";
+
+        const labelEl = document.getElementById("reminderTimeOffcanvasLabel");
+        if (labelEl) labelEl.textContent = meal;
+      });
+
+      // Swiper 資料
+      const ampmOptions = ["上午", "下午"];
+      const hourOptions = Array.from({ length: 24 }, (_, i) =>
+        String(i).padStart(2, "0")
+      ); // 00-23
+      const minuteOptions = Array.from({ length: 60 }, (_, i) =>
+        String(i).padStart(2, "0")
+      ); // 00-59
+      // 若要每 5 分鐘一格：const minuteOptions = Array.from({length:12},(_,i)=>String(i*5).padStart(2,'0'));
+
+      // 塞入 slides
+      function mountSlides(containerSelector, options) {
+        const wrap = document.querySelector(
+          `${containerSelector} .swiper-wrapper`
+        );
+        wrap.innerHTML = options
+          .map((v) => `<div class="swiper-slide">${v}</div>`)
+          .join("");
+      }
+      mountSlides(".picker-swiper-ampm", ampmOptions);
+      mountSlides(".picker-swiper-hour", hourOptions);
+      mountSlides(".picker-swiper-minute", minuteOptions);
+
+      // 建立 Swiper（垂直、置中、loop 模擬無限滾輪）
+      const common = {
+        autoHeight: true,
+        direction: "vertical",
+        slidesPerView: "auto", // 建議用奇數：中間那格就是選取
+        spaceBetween: 5,
+        centeredSlides: true,
+        mousewheel: true, // 滑鼠滾輪也可操作（桌機）
+        resistanceRatio: 0.4,
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 10, // 直向時是繞 X 軸的傾斜感
+          stretch: 0, // 軸向拉伸（可微調正/負值）
+          depth: 150, // Z 軸深度，數字越大越有層次
+          modifier: 1, // 效果倍率
+          slideShadows: false, // 文本輪建議關掉陰影，較清晰
+        },
+      };
+
+      const ampmSwiper = new Swiper(".picker-swiper-ampm", common);
+      const hourSwiper = new Swiper(".picker-swiper-hour", common);
+      const minuteSwiper = new Swiper(".picker-swiper-minute", common);
+
+      // 設定預設值：下午 19:30
+      ampmSwiper.slideToLoop(1, 0, false); // 上午:0 / 下午:1
+      hourSwiper.slideToLoop(19, 0, false);
+      minuteSwiper.slideToLoop(30, 0, false);
+
+      // 讀取目前值（loop 下用 realIndex 最準）
+      function getValue(swiper, options) {
+        return options[swiper.realIndex];
+      }
+    </script>
   </body>
 </html>
