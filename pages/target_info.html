@@ -13,68 +13,91 @@
     <link rel="stylesheet" href="../assets/scss/all.scss" />
     <title>target-info</title>
   </head>
-  <body>
-    <main class="py-4 bg-primary-500 d-flex justify-content-center">
-      <section class="cell-phone bg-surface-bg">
-        <!-- 保留狀態列高度 -->
-        <%- include('./layout/header'); -%>
-        <div class="bg-surface-bg"></div>
-        <!-- 規律飲食 -->
-        <form action="/" class="overflow-y-auto">
-          <div class="d-flex flex-column custom-height">
-            <div class="py-3 px-4 d-flex align-items-center mt-3">
-              <a href="./personal_goal.html" class="btn p-2 border-0"
-                ><img
-                  src="/assets/images/left_line.svg"
-                  alt="回上一頁"
-                  class="d-block"
-              /></a>
-              <h1
-                class="fs-6 fw-bold lh-1 mb-0 flex-grow-1 text-center text-neutral-800"
-              >
-                規律飲食
-              </h1>
-            </div>
-            <!-- 確認設定目標 -->
-            <p class="text-primary-950 lh-5 text-center wrap mb-4">
-              要調整次數嗎？<br />規律飲食可以有助身體健康～
-            </p>
-            <!-- 圖片 -->
-            <div class="py-3 mb-4">
-              <div class="goals-img">
-                <img
-                  src="/assets/images/personal_goals.svg"
-                  alt="personal_goals"
-                />
+  <body class="bg-primary-500">
+    <main class="py-4 d-flex justify-content-center">
+      <!-- 手機框定位點 -->
+      <div
+        class="position-relative d-flex justify-content-center align-items-center w-420 h-850 overflow-hidden"
+      >
+        <!-- 手機框圖片 -->
+        <img
+          class="position-absolute z-3000 w-100 h-100 pointer-events-none w-300"
+          src="../assets/images/iphone13 mockup.svg"
+          alt=""
+        />
+        <section class="cell-phone bg-surface-bg">
+          <!-- 保留狀態列高度 -->
+          <%- include('./layout/header'); -%>
+          <div class="bg-surface-bg"></div>
+          <!-- 規律飲食 -->
+          <form action="/" class="overflow-y-auto">
+            <div class="d-flex flex-column custom-height">
+              <div class="py-2 px-3 d-flex align-items-center mt-3">
+                <a href="./personal_goal.html" class="btn p-2 border-0"
+                  ><img
+                    src="/assets/images/left_line.svg"
+                    alt="回上一頁"
+                    class="d-block"
+                /></a>
+                <h1
+                  class="fs-6 fw-bold lh-1 mb-0 flex-grow-1 text-center text-neutral-800"
+                >
+                  規律飲食
+                </h1>
+                <a href="#" class="btn p-2 border-0"
+                  ><img
+                    src="/assets/images/left_line.svg"
+                    alt="回上一頁"
+                    class="opacity-0 pe-non"
+                /></a>
+              </div>
+              <!-- 確認設定目標 -->
+              <p class="text-primary-950 lh-5 text-center wrap mb-4">
+                要調整次數嗎？<br />規律飲食可以有助身體健康～
+              </p>
+              <!-- 圖片 -->
+              <div class="py-3 mb-4">
+                <div class="goals-img">
+                  <img
+                    src="/assets/images/personal_goals.svg"
+                    alt="personal_goals"
+                  />
+                </div>
+              </div>
+              <!-- 選擇每週次數 -->
+              <div class="px-3 mb-18">
+                <p class="fs-6 text-center mb-7">每週</p>
+                <ol
+                  class="d-flex justify-content-around align-items-center text-primary-950 list-unstyled mb-7"
+                >
+                  <li class="fs-6 fw-400 opacity-50">3</li>
+                  <li>
+                    <h3 class="h2 fw-400 opacity-50 m-0">4</h3>
+                  </li>
+                  <li>
+                    <h1 class="display-5 fw-bold m-0">5</h1>
+                  </li>
+                  <li>
+                    <h3 class="h2 fw-400 opacity-50 m-0">6</h3>
+                  </li>
+                  <li class="fs-6 fw-400 opacity-50">7</li>
+                </ol>
+                <p class="fs-6 text-center m-0">天</p>
+              </div>
+              <!-- 確認按鈕 -->
+              <div class="mx-3 mb-10">
+                <a
+                  href="./target_date.html"
+                  class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
+                  >下一步</a
+                >
               </div>
             </div>
-            <!-- 選擇每週次數 -->
-            <div class="px-3 mb-18">
-              <p class="fs-6 text-center mb-7">每週</p>
-              <ol
-                class="d-flex justify-content-around align-items-center text-primary-950 list-unstyled mb-7"
-              >
-                <li class="fs-6 opacity-50">3</li>
-                <li class="display-6 opacity-50">4</li>
-                <li class="display-4 fw-bold">5</li>
-                <li class="display-6 opacity-50">6</li>
-                <li class="fs-2 opacity-50">7</li>
-              </ol>
-              <p class="fs-6 text-center m-0">天</p>
-            </div>
-            <!-- 確認按鈕 -->
-            <div class="mx-3 mb-10">
-              <a
-                href="./target_date.html"
-                class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
-                >下一步</a
-              >
-            </div>
-          </div>
-        </form>
-        <!-- nav按鈕選項2 -->
-        <%- include('./layout/footer_personal'); -%>
-      </section>
+          </form>
+          <!-- nav按鈕選項2 -->
+          <%- include('./layout/footer_personal'); -%>
+        </section>
+      </div>
     </main>
 
     <script type="module" src="../main.js"></script>
