@@ -18,13 +18,23 @@
     <link rel="stylesheet" href="../assets/scss/all.scss" />
     <title>設定目標時間</title>
   </head>
-  <body>
-    <main class="py-4 d-flex justify-content-center bg-primary-500">
-      <section class="cell-phone bg-surface-bg z-0">
-        <%- include('./layout/header'); -%>
+  <body class="bg-primary-500">
+    <main class="py-4 d-flex justify-content-center">
+      <!-- 手機框定位點 -->
+      <div
+        class="position-relative d-flex justify-content-center align-items-center w-420 h-850 overflow-hidden"
+      >
+        <!-- 手機框圖片 -->
+        <img
+          class="position-absolute z-3000 w-100 h-100 pointer-events-none w-300"
+          src="../assets/images/iphone13 mockup.svg"
+          alt=""
+        />
 
-        <form action="/">
-          <main class="d-flex flex-column custom-height">
+        <section class="cell-phone bg-surface-bg z-0">
+          <%- include('./layout/header'); -%>
+
+          <div class="d-flex flex-column custom-height">
             <div class="py-2 ps-3 pe-30 d-flex align-items-center mt-3">
               <a href="target_date.html" class="btn p-2 border-0"
                 ><img
@@ -155,89 +165,89 @@
                 >下一步</a
               >
             </div>
-          </main>
-        </form>
+          </div>
 
-        <!-- 導覽列區塊 -->
-        <%- include('./layout/footer_personal'); -%>
+          <!-- 導覽列區塊 -->
+          <%- include('./layout/footer_personal'); -%>
 
-        <!-- reminderTimeOffcanvas -->
-        <div
-          class="offcanvas offcanvas-bottom offcanvas-inset"
-          tabindex="-1"
-          id="reminderTimeOffcanvas"
-          aria-labelledby="reminderTimeOffcanvasLabel"
-          data-bs-backdrop="false"
-          data-bs-scroll="true"
-        >
-          <div class="offcanvas-header p-0 mb-2 flex-column">
-            <div class="grab-bar"></div>
-            <div
-              class="d-flex justify-content-start align-items-center py-2 ps-3 pe-31 w-100"
-            >
-              <button
-                type="button"
-                class="btn border-0 p-12"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
+          <!-- reminderTimeOffcanvas -->
+          <div
+            class="offcanvas offcanvas-bottom offcanvas-inset"
+            tabindex="-1"
+            id="reminderTimeOffcanvas"
+            aria-labelledby="reminderTimeOffcanvasLabel"
+            data-bs-backdrop="false"
+            data-bs-scroll="true"
+          >
+            <div class="offcanvas-header p-0 mb-2 flex-column">
+              <div class="grab-bar"></div>
+              <div
+                class="d-flex justify-content-start align-items-center py-2 ps-3 pe-31 w-100"
               >
-                <img
-                  src="/assets/images/item=close_line.svg"
-                  alt="close_line"
-                  class="w-24"
-                />
-              </button>
-              <div class="w-100">
-                <h4
-                  id="reminderTimeOffcanvasLabel"
-                  class="fs-5 text-center text-primary-800 mb-2"
+                <button
+                  type="button"
+                  class="btn border-0 p-12"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
                 >
-                  晚餐
-                </h4>
-                <p class="text-center text-neutral-500 mb-0">
-                  設定每日提醒時間
-                </p>
+                  <img
+                    src="/assets/images/item=close_line.svg"
+                    alt="close_line"
+                    class="w-24"
+                  />
+                </button>
+                <div class="w-100">
+                  <h4
+                    id="reminderTimeOffcanvasLabel"
+                    class="fs-5 text-center text-primary-800 mb-2"
+                  >
+                    晚餐
+                  </h4>
+                  <p class="text-center text-neutral-500 mb-0">
+                    設定每日提醒時間
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="offcanvas-body p-0">
-            <div class="mb-3 px-3">
-              <!-- 選擇時間 -->
-              <div class="position-relative">
-                <div class="picker-window"></div>
-                <div class="select-wrapper">
-                  <div class="picker">
-                    <!-- 上午/下午 -->
-                    <div class="swiper picker-swiper-ampm me-32">
-                      <div class="swiper-wrapper"></div>
-                    </div>
+            <div class="offcanvas-body p-0">
+              <div class="mb-3 px-3">
+                <!-- 選擇時間 -->
+                <div class="position-relative">
+                  <div class="picker-window"></div>
+                  <div class="select-wrapper">
+                    <div class="picker">
+                      <!-- 上午/下午 -->
+                      <div class="swiper picker-swiper-ampm me-32">
+                        <div class="swiper-wrapper"></div>
+                      </div>
 
-                    <!-- 小時 -->
-                    <div class="swiper picker-swiper-hour me-33">
-                      <div class="swiper-wrapper"></div>
-                    </div>
+                      <!-- 小時 -->
+                      <div class="swiper picker-swiper-hour me-33">
+                        <div class="swiper-wrapper"></div>
+                      </div>
 
-                    <!-- 分鐘 -->
-                    <div class="swiper picker-swiper-minute">
-                      <div class="swiper-wrapper"></div>
+                      <!-- 分鐘 -->
+                      <div class="swiper picker-swiper-minute">
+                        <div class="swiper-wrapper"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <button
+                  type="button"
+                  class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
+                  data-bs-dismiss="offcanvas"
+                >
+                  設置
+                </button>
               </div>
-              <button
-                type="button"
-                class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
-                data-bs-dismiss="offcanvas"
-              >
-                設置
-              </button>
             </div>
           </div>
-        </div>
 
-        <!-- 只覆蓋 .cell-phone 的半透明遮罩 -->
-        <div class="sheet-backdrop" hidden></div>
-      </section>
+          <!-- 只覆蓋 .cell-phone 的半透明遮罩 -->
+          <div class="sheet-backdrop" hidden></div>
+        </section>
+      </div>
     </main>
 
     <script type="module" src="../main.js"></script>
