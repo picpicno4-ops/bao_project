@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="../assets/scss/all.scss" />
     <title>target-info</title>
   </head>
-  <body>
-    <main class="py-4 bg-primary-500 d-flex justify-content-center">
+  <body class="bg-primary-500">
+    <main class="py-4 d-flex justify-content-center">
       <section class="cell-phone bg-surface-bg">
         <!-- 保留狀態列高度 -->
         <%- include('./layout/header'); -%>
@@ -22,7 +22,7 @@
         <!-- 規律飲食 -->
         <form action="/" class="overflow-y-auto">
           <div class="d-flex flex-column custom-height">
-            <div class="py-2 ps-4 pe-40 d-flex align-items-center mt-3">
+            <div class="py-2 px-2 d-flex align-items-center mt-3">
               <a href="./personal_goal.html" class="btn p-2 border-0"
                 ><img
                   src="/assets/images/left_line.svg"
@@ -34,6 +34,12 @@
               >
                 規律飲食
               </h1>
+              <a href="#" class="btn p-2 border-0"
+                ><img
+                  src="/assets/images/left_line.svg"
+                  alt="回上一頁"
+                  class="opacity-0 pe-non"
+              /></a>
             </div>
             <!-- 確認設定目標 -->
             <p class="text-primary-950 lh-5 text-center wrap mb-4">
@@ -54,13 +60,17 @@
               <ol
                 class="d-flex justify-content-around align-items-center text-primary-950 list-unstyled mb-7"
               >
-                <li class="fs-6 opacity-50">3</li>
+                <li class="fs-6 fw-400 opacity-50">3</li>
                 <li>
-                  <h3 class="h2 fw-bold opacity-50">4</h3>
+                  <h3 class="h2 fw-400 opacity-50 m-0">4</h3>
                 </li>
-                <li><h1 class="display-5 fw-bold">5</h1></li>
-                <li><h3 class="h2 fw-bold opacity-50">6</h3></li>
-                <li class="fs-2 opacity-50">7</li>
+                <li>
+                  <h1 class="display-5 fw-bold m-0">5</h1>
+                </li>
+                <li>
+                  <h3 class="h2 fw-400 opacity-50 m-0">6</h3>
+                </li>
+                <li class="fs-6 fw-400 opacity-50">7</li>
               </ol>
               <p class="fs-6 text-center m-0">天</p>
             </div>
