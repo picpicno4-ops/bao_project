@@ -11,13 +11,24 @@
       rel="stylesheet"
     />
     <title>確認設定目標</title>
-    <script type="module" crossorigin src="/bao_project/assets/main-DYJwU842.js"></script>
-    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-DbActDFH.css">
+    <script type="module" crossorigin src="/bao_project/assets/main-1BpNOCJy.js"></script>
+    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-OIMA09Hy.css">
   </head>
-  <body>
-    <main class="py-4 d-flex justify-content-center bg-primary-500">
-      <section class="cell-phone bg-confirm">
-        <!-- 導覽列 -->
+  <body class="bg-primary-500">
+    <main class="py-4 d-flex justify-content-center">
+      <!-- 手機框定位點 -->
+      <div
+        class="position-relative d-flex justify-content-center align-items-center w-420 h-850 overflow-hidden"
+      >
+        <!-- 手機框圖片 -->
+        <img
+          class="position-absolute z-3000 w-100 h-100 pointer-events-none w-300"
+          src="/bao_project/assets/iphone13%20mockup-Cv4B33RO.svg"
+          alt=""
+        />
+
+        <section class="cell-phone bg-confirm">
+          <!-- 導覽列 -->
 <section>
   <!-- 時間 -->
   <div
@@ -27,6 +38,7 @@
     <div>
       <p class="mb-0 fs-5 text-black fw-bold">9:41</p>
     </div>
+    <div></div>
     <div class="d-flex">
       <div class="me-2">
         <svg
@@ -96,8 +108,7 @@
   </div>
 </section>
 
-        <form action="/">
-          <main class="d-flex flex-column custom-height">
+          <div class="d-flex flex-column custom-height">
             <div class="py-2 ps-3 pe-30 d-flex align-items-center mt-3">
               <a href="target_time.html" class="btn p-2 border-0"
                 ><img
@@ -143,11 +154,10 @@
                 >確認</a
               >
             </div>
-          </main>
-        </form>
+          </div>
 
-        <!-- 導覽列區塊 -->
-        <div class="position-absolute bottom-0 start-0 end-0 z-1000">
+          <!-- 導覽列區塊 -->
+          <div class="position-absolute bottom-0 start-0 end-0 z-1000">
   <div
     class="btn-group bg-neutral-50 border-radius-20 shadow rounded-bottom-0 d-block"
     role="group"
@@ -326,7 +336,8 @@
     </div>
   </div>
 </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <script src="../change_page.js"></script>

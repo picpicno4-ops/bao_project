@@ -16,13 +16,24 @@
     />
 
     <title>設定目標時間</title>
-    <script type="module" crossorigin src="/bao_project/assets/main-DYJwU842.js"></script>
-    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-DbActDFH.css">
+    <script type="module" crossorigin src="/bao_project/assets/main-1BpNOCJy.js"></script>
+    <link rel="stylesheet" crossorigin href="/bao_project/assets/main-OIMA09Hy.css">
   </head>
-  <body>
-    <main class="py-4 d-flex justify-content-center bg-primary-500">
-      <section class="cell-phone bg-surface-bg z-0">
-        <!-- 導覽列 -->
+  <body class="bg-primary-500">
+    <main class="py-4 d-flex justify-content-center">
+      <!-- 手機框定位點 -->
+      <div
+        class="position-relative d-flex justify-content-center align-items-center w-420 h-850 overflow-hidden"
+      >
+        <!-- 手機框圖片 -->
+        <img
+          class="position-absolute z-3000 w-100 h-100 pointer-events-none w-300"
+          src="/bao_project/assets/iphone13%20mockup-Cv4B33RO.svg"
+          alt=""
+        />
+
+        <section class="cell-phone bg-surface-bg z-0">
+          <!-- 導覽列 -->
 <section>
   <!-- 時間 -->
   <div
@@ -32,6 +43,7 @@
     <div>
       <p class="mb-0 fs-5 text-black fw-bold">9:41</p>
     </div>
+    <div></div>
     <div class="d-flex">
       <div class="me-2">
         <svg
@@ -101,8 +113,7 @@
   </div>
 </section>
 
-        <form action="/">
-          <main class="d-flex flex-column custom-height">
+          <div class="d-flex flex-column custom-height">
             <div class="py-2 ps-3 pe-30 d-flex align-items-center mt-3">
               <a href="target_date.html" class="btn p-2 border-0"
                 ><img
@@ -233,11 +244,10 @@
                 >下一步</a
               >
             </div>
-          </main>
-        </form>
+          </div>
 
-        <!-- 導覽列區塊 -->
-        <div class="position-absolute bottom-0 start-0 end-0 z-1000">
+          <!-- 導覽列區塊 -->
+          <div class="position-absolute bottom-0 start-0 end-0 z-1000">
   <div
     class="btn-group bg-neutral-50 border-radius-20 shadow rounded-bottom-0 d-block"
     role="group"
@@ -417,83 +427,84 @@
   </div>
 </div>
 
-        <!-- reminderTimeOffcanvas -->
-        <div
-          class="offcanvas offcanvas-bottom offcanvas-inset"
-          tabindex="-1"
-          id="reminderTimeOffcanvas"
-          aria-labelledby="reminderTimeOffcanvasLabel"
-          data-bs-backdrop="false"
-          data-bs-scroll="true"
-        >
-          <div class="offcanvas-header p-0 mb-2 flex-column">
-            <div class="grab-bar"></div>
-            <div
-              class="d-flex justify-content-start align-items-center py-2 ps-3 pe-31 w-100"
-            >
-              <button
-                type="button"
-                class="btn border-0 p-12"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
+          <!-- reminderTimeOffcanvas -->
+          <div
+            class="offcanvas offcanvas-bottom offcanvas-inset"
+            tabindex="-1"
+            id="reminderTimeOffcanvas"
+            aria-labelledby="reminderTimeOffcanvasLabel"
+            data-bs-backdrop="false"
+            data-bs-scroll="true"
+          >
+            <div class="offcanvas-header p-0 mb-2 flex-column">
+              <div class="grab-bar"></div>
+              <div
+                class="d-flex justify-content-start align-items-center py-2 ps-3 pe-31 w-100"
               >
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_18765_35064)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12%2013.4141L17.657%2019.0711C17.8456%2019.2533%2018.0982%2019.3541%2018.3604%2019.3518C18.6226%2019.3495%2018.8734%2019.2444%2019.0588%2019.059C19.2442%2018.8736%2019.3494%2018.6227%2019.3517%2018.3606C19.354%2018.0984%2019.2532%2017.8458%2019.071%2017.6571L13.414%2012.0001L19.071%206.34315C19.2532%206.15455%2019.354%205.90194%2019.3517%205.63975C19.3494%205.37755%2019.2442%205.12674%2019.0588%204.94133C18.8734%204.75592%2018.6226%204.65075%2018.3604%204.64848C18.0982%204.6462%2017.8456%204.74699%2017.657%204.92915L12%2010.5861L6.34301%204.92915C6.15356%204.75149%205.90242%204.65451%205.64274%204.65873C5.38305%204.66295%205.1352%204.76803%204.95162%204.95174C4.76803%205.13546%204.66313%205.38339%204.65909%205.64307C4.65506%205.90276%204.75222%206.15382%204.93001%206.34315L10.586%2012.0001L4.92901%2017.6571C4.8335%2017.7494%204.75731%2017.8597%204.70491%2017.9817C4.6525%2018.1037%204.62491%2018.235%204.62376%2018.3677C4.6226%2018.5005%204.6479%2018.6322%204.69818%2018.7551C4.74847%2018.878%204.82272%2018.9897%204.91661%2019.0835C5.0105%2019.1774%205.12216%2019.2517%205.24505%2019.302C5.36795%2019.3523%205.49963%2019.3776%205.63241%2019.3764C5.76519%2019.3752%205.89641%2019.3477%206.01841%2019.2953C6.14041%2019.2428%206.25076%2019.1667%206.34301%2019.0711L12%2013.4141Z'%20fill='%236D6D6D'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_18765_35064'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
-                  alt="close_line"
-                  class="w-24"
-                />
-              </button>
-              <div class="w-100">
-                <h4
-                  id="reminderTimeOffcanvasLabel"
-                  class="fs-5 text-center text-primary-800 mb-2"
+                <button
+                  type="button"
+                  class="btn border-0 p-12"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
                 >
-                  晚餐
-                </h4>
-                <p class="text-center text-neutral-500 mb-0">
-                  設定每日提醒時間
-                </p>
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_18765_35064)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12%2013.4141L17.657%2019.0711C17.8456%2019.2533%2018.0982%2019.3541%2018.3604%2019.3518C18.6226%2019.3495%2018.8734%2019.2444%2019.0588%2019.059C19.2442%2018.8736%2019.3494%2018.6227%2019.3517%2018.3606C19.354%2018.0984%2019.2532%2017.8458%2019.071%2017.6571L13.414%2012.0001L19.071%206.34315C19.2532%206.15455%2019.354%205.90194%2019.3517%205.63975C19.3494%205.37755%2019.2442%205.12674%2019.0588%204.94133C18.8734%204.75592%2018.6226%204.65075%2018.3604%204.64848C18.0982%204.6462%2017.8456%204.74699%2017.657%204.92915L12%2010.5861L6.34301%204.92915C6.15356%204.75149%205.90242%204.65451%205.64274%204.65873C5.38305%204.66295%205.1352%204.76803%204.95162%204.95174C4.76803%205.13546%204.66313%205.38339%204.65909%205.64307C4.65506%205.90276%204.75222%206.15382%204.93001%206.34315L10.586%2012.0001L4.92901%2017.6571C4.8335%2017.7494%204.75731%2017.8597%204.70491%2017.9817C4.6525%2018.1037%204.62491%2018.235%204.62376%2018.3677C4.6226%2018.5005%204.6479%2018.6322%204.69818%2018.7551C4.74847%2018.878%204.82272%2018.9897%204.91661%2019.0835C5.0105%2019.1774%205.12216%2019.2517%205.24505%2019.302C5.36795%2019.3523%205.49963%2019.3776%205.63241%2019.3764C5.76519%2019.3752%205.89641%2019.3477%206.01841%2019.2953C6.14041%2019.2428%206.25076%2019.1667%206.34301%2019.0711L12%2013.4141Z'%20fill='%236D6D6D'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_18765_35064'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                    alt="close_line"
+                    class="w-24"
+                  />
+                </button>
+                <div class="w-100">
+                  <h4
+                    id="reminderTimeOffcanvasLabel"
+                    class="fs-5 text-center text-primary-800 mb-2"
+                  >
+                    晚餐
+                  </h4>
+                  <p class="text-center text-neutral-500 mb-0">
+                    設定每日提醒時間
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="offcanvas-body p-0">
-            <div class="mb-3 px-3">
-              <!-- 選擇時間 -->
-              <div class="position-relative">
-                <div class="picker-window"></div>
-                <div class="select-wrapper">
-                  <div class="picker">
-                    <!-- 上午/下午 -->
-                    <div class="swiper picker-swiper-ampm me-32">
-                      <div class="swiper-wrapper"></div>
-                    </div>
+            <div class="offcanvas-body p-0">
+              <div class="mb-3 px-3">
+                <!-- 選擇時間 -->
+                <div class="position-relative">
+                  <div class="picker-window"></div>
+                  <div class="select-wrapper">
+                    <div class="picker">
+                      <!-- 上午/下午 -->
+                      <div class="swiper picker-swiper-ampm me-32">
+                        <div class="swiper-wrapper"></div>
+                      </div>
 
-                    <!-- 小時 -->
-                    <div class="swiper picker-swiper-hour me-33">
-                      <div class="swiper-wrapper"></div>
-                    </div>
+                      <!-- 小時 -->
+                      <div class="swiper picker-swiper-hour me-33">
+                        <div class="swiper-wrapper"></div>
+                      </div>
 
-                    <!-- 分鐘 -->
-                    <div class="swiper picker-swiper-minute">
-                      <div class="swiper-wrapper"></div>
+                      <!-- 分鐘 -->
+                      <div class="swiper picker-swiper-minute">
+                        <div class="swiper-wrapper"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <button
+                  type="button"
+                  class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
+                  data-bs-dismiss="offcanvas"
+                >
+                  設置
+                </button>
               </div>
-              <button
-                type="button"
-                class="btn btn-primary-300 text-primary-950 fw-bold lh-sm py-3 rounded-pill w-100"
-                data-bs-dismiss="offcanvas"
-              >
-                設置
-              </button>
             </div>
           </div>
-        </div>
 
-        <!-- 只覆蓋 .cell-phone 的半透明遮罩 -->
-        <div class="sheet-backdrop" hidden></div>
-      </section>
+          <!-- 只覆蓋 .cell-phone 的半透明遮罩 -->
+          <div class="sheet-backdrop" hidden></div>
+        </section>
+      </div>
     </main>
 
     <script src="../change_page.js"></script>
